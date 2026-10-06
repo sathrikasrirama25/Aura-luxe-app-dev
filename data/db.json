@@ -1,0 +1,124 @@
+{
+  "cart": [],
+  "wishlist": [
+    "women-01",
+    "men-01",
+    "beauty-01"
+  ],
+  "orders": [
+    {
+      "orderId": "LXC-572116",
+      "items": [
+        {
+          "productId": "decor-01",
+          "name": "ArtStreet Abstract Botanical Canvas Wall Art (Set of 3)",
+          "brand": "ArtStreet",
+          "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=700&auto=format&fit=crop&q=80",
+          "price": 1899,
+          "size": "12x18 Inch each (3 Pcs)",
+          "color": "Sage Green / Beige",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 1048,
+      "discountAmount": 950,
+      "deliveryCharge": 0,
+      "address": {
+        "name": "Alex Johnson",
+        "mobile": "+91 98765 43210",
+        "doorNo": "402",
+        "houseNo": "Block B, Skyline Heights",
+        "street": "Koramangala 4th Block",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560034"
+      },
+      "paymentMethod": "PhonePe UPI",
+      "paymentStatus": "Completed",
+      "orderStatus": "Order Confirmed",
+      "estimatedDelivery": "Delivery by Sat, Oct 3",
+      "orderDate": "2026-09-30T15:14:09.765Z"
+    },
+    {
+      "orderId": "LXC-92841",
+      "items": [
+        {
+          "productId": "shoe-01",
+          "name": "Nike Air Zoom Pegasus 40",
+          "brand": "Nike",
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&auto=format&fit=crop&q=80",
+          "price": 7999,
+          "size": "9",
+          "color": "Crimson Red",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 7999,
+      "discountAmount": 3996,
+      "deliveryCharge": 0,
+      "address": {
+        "name": "Alex Johnson",
+        "doorNo": "402",
+        "houseNo": "Block B, Skyline Heights",
+        "street": "Koramangala 4th Block",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560034",
+        "mobile": "9876543210"
+      },
+      "paymentMethod": "PhonePe UPI",
+      "paymentStatus": "Completed",
+      "orderStatus": "Delivered",
+      "estimatedDelivery": "Delivered on 28 Sep",
+      "orderDate": "2026-09-27T15:06:11.480Z"
+    },
+    {
+      "orderId": "LXC-81723",
+      "items": [
+        {
+          "productId": "men-01",
+          "name": "Ralph Lauren Classic Fit Oxford Cotton Shirt",
+          "brand": "Ralph Lauren",
+          "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=700&auto=format&fit=crop&q=80",
+          "price": 5999,
+          "size": "40",
+          "color": "Light Blue",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 5999,
+      "discountAmount": 2901,
+      "deliveryCharge": 0,
+      "address": {
+        "name": "Alex Johnson",
+        "doorNo": "402",
+        "houseNo": "Block B, Skyline Heights",
+        "street": "Koramangala 4th Block",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560034",
+        "mobile": "9876543210"
+      },
+      "paymentMethod": "Google Pay UPI",
+      "paymentStatus": "Completed",
+      "orderStatus": "Shipped",
+      "estimatedDelivery": "Arriving by Tomorrow",
+      "orderDate": "2026-09-29T15:06:11.481Z"
+    }
+  ],
+  "user": {
+    "name": "Alex Johnson",
+    "email": "alex.johnson@example.com",
+    "mobile": "+91 98765 43210",
+    "savedAddress": {
+      "name": "Alex Johnson",
+      "mobile": "+91 98765 43210",
+      "doorNo": "402",
+      "houseNo": "Block B, Skyline Heights",
+      "street": "Koramangala 4th Block",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pinCode": "560034"
+    }
+  }
+}

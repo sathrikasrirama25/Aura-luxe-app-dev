@@ -1,0 +1,28 @@
+{
+  "name": "your-shopping-application",
+  "version": "1.0.0",
+  "description": "LuxeCart - Your Shopping Application - Modern Mobile-Friendly E-Commerce Web App with React, Node.js, and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "node server.js",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "mongoose": "^8.3.0",
+    "dotenv": "^16.4.5"
+  },
+  "keywords": [
+    "ecommerce",
+    "shopping-app",
+    "react",
+    "node",
+    "mongodb"
+  ],
+  "author": "LuxeCart Team",
+  "license": "ISC"
+}
