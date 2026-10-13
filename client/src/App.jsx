@@ -395,6 +395,11 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
   // Wishlist items
   const wishlistProducts = products.filter((p) => wishlistIds.includes(p.id));
 
+  if (!isLoggedIn) {
+    return <Login onLogin={() => setIsLoggedIn(true)} />;
+  }
+
+
   return (
     <div className="app-root">
       {/* Top Banner */}
