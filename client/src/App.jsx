@@ -21,6 +21,9 @@ import Toast from './components/Toast';
 import { Filter, SlidersHorizontal, Sparkles, Layers } from 'lucide-react';
 import './App.css';
 
+import Login from './components/Login';
+
+
 export default function App() {
   // Brand name state (configurable via Brand Suggester Modal)
   const [brandName, setBrandName] = useState(() => {
