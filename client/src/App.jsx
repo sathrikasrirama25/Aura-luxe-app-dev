@@ -43,6 +43,7 @@ export default function App() {
   const [wishlistIds, setWishlistIds] = useState(['shoe-01', 'women-01', 'men-01', 'beauty-01']);
   const [orders, setOrders] = useState([]);
   const [savedUser, setSavedUser] = useState(null);
+const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [appliedCoupon, setAppliedCoupon] = useState(null);
 
   // Modals & Drawers state
