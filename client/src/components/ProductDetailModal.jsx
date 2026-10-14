@@ -13,6 +13,7 @@ import {
   MapPin
 } from 'lucide-react';
 import gsap from 'gsap';
+import ReviewsSection from './ReviewsSection';
 
 export default function ProductDetailModal({
   product,
@@ -312,7 +313,8 @@ export default function ProductDetailModal({
                 <span>Buy Now (Instant Checkout)</span>
               </button>
             </div>
-
+<ReviewsSection
+ productId={product.id} />
             {/* Value Guarantees */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginTop: '24px', paddingTop: '20px', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.78rem', color: '#94a3b8' }}>
