@@ -10,9 +10,12 @@ import {
   CheckCircle2,
   Check,
   Eye,
-  EyeOff
+  EyeOff,
+  AlertCircle,
+  HelpCircle
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { authenticateUser, registerUser } from '../utils/authStore';
 
 export default function Login({ onLogin }) {
   const [mode, setMode] = useState('signin'); // 'signin' or 'signup'
@@ -27,10 +30,18 @@ export default function Login({ onLogin }) {
   const [signupEmail, setSignupEmail] = useState('');
   const [signupPassword, setSignupPassword] = useState('');
 
-  // OAuth Simulation State
+  // Status and Validation Messages
+  const [errorMessage, setErrorMessage] = useState('');
   const [isAuthorizing, setIsAuthorizing] = useState(false);
+
+  // OAuth Simulation State
   const [authProvider, setAuthProvider] = useState(null);
   const [showOAuthPopup, setShowOAuthPopup] = useState(false);
+
+  const switchMode = (newMode) => {
+    setMode(newMode);
+    setErrorMessage('');
+  };
 
   const triggerSuccess = (userProfile) => {
     try {
@@ -46,6 +57,7 @@ export default function Login({ onLogin }) {
   };
 
   const handleStartOAuth = (provider) => {
+    setErrorMessage('');
     setAuthProvider(provider);
     setShowOAuthPopup(true);
   };
@@ -121,56 +133,68 @@ export default function Login({ onLogin }) {
       }
 
       triggerSuccess(userProfile);
-    }, 700);
+    }, 600);
   };
 
   const handleSignInSubmit = (e) => {
     e.preventDefault();
-    if (!loginEmail.trim() || !loginPassword.trim()) return;
+    setErrorMessage('');
+
+    if (!loginEmail.trim()) {
+      setErrorMessage('Please enter your email address.');
+      return;
+    }
+    if (!loginPassword.trim()) {
+      setErrorMessage('Please enter your password.');
+      return;
+    }
 
     setIsAuthorizing(true);
     setTimeout(() => {
       setIsAuthorizing(false);
-      const namePart = loginEmail.split('@')[0];
-      const cleanName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
-
-      const userProfile = {
-        id: `usr_em_${Date.now()}`,
-        name: cleanName,
-        email: loginEmail.trim(),
-        avatar: `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(cleanName)}`,
-        provider: 'Email & Password',
-        tier: 'VIP Member',
-        points: 500,
-        ordersCount: 1,
-        savedAddress: null
-      };
-
-      triggerSuccess(userProfile);
-    }, 600);
+      try {
+        const userProfile = authenticateUser({
+          email: loginEmail,
+          password: loginPassword
+        });
+        triggerSuccess(userProfile);
+      } catch (err) {
+        setErrorMessage(err.message || 'Authentication failed. Please check your credentials.');
+      }
+    }, 500);
   };
 
   const handleSignUpSubmit = (e) => {
     e.preventDefault();
-    if (!signupName.trim() || !signupEmail.trim() || !signupPassword.trim()) return;
+    setErrorMessage('');
+
+    if (!signupName.trim()) {
+      setErrorMessage('Please enter your full name.');
+      return;
+    }
+    if (!signupEmail.trim()) {
+      setErrorMessage('Please enter your email address.');
+      return;
+    }
+    if (!signupPassword.trim()) {
+      setErrorMessage('Please create a password for your account.');
+      return;
+    }
 
     setIsAuthorizing(true);
     setTimeout(() => {
       setIsAuthorizing(false);
-      const userProfile = {
-        id: `usr_reg_${Date.now()}`,
-        name: signupName.trim(),
-        email: signupEmail.trim(),
-        avatar: `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(signupName.trim())}`,
-        provider: 'Aura Luxe Registration',
-        tier: 'VIP Gold Member',
-        points: 500, // Welcome points
-        ordersCount: 0,
-        savedAddress: null
-      };
-
-      triggerSuccess(userProfile);
-    }, 700);
+      try {
+        const userProfile = registerUser({
+          name: signupName,
+          email: signupEmail,
+          password: signupPassword
+        });
+        triggerSuccess(userProfile);
+      } catch (err) {
+        setErrorMessage(err.message || 'Registration failed. Please try again.');
+      }
+    }, 600);
   };
 
   const handleGuestContinue = () => {
@@ -203,7 +227,7 @@ export default function Login({ onLogin }) {
               <button
                 type="button"
                 className={`auth-mode-tab ${mode === 'signin' ? 'active' : ''}`}
-                onClick={() => setMode('signin')}
+                onClick={() => switchMode('signin')}
               >
                 <Lock size={14} />
                 <span>Sign In</span>
@@ -211,13 +235,34 @@ export default function Login({ onLogin }) {
               <button
                 type="button"
                 className={`auth-mode-tab ${mode === 'signup' ? 'active' : ''}`}
-                onClick={() => setMode('signup')}
+                onClick={() => switchMode('signup')}
               >
                 <Sparkles size={14} color="#fbbf24" />
                 <span>Create Account / Sign Up</span>
                 <span className="auth-tab-badge">+500 pts</span>
               </button>
             </div>
+
+            {/* Error Message Alert */}
+            {errorMessage && (
+              <div className="auth-error-banner">
+                <AlertCircle size={17} style={{ flexShrink: 0 }} />
+                <div style={{ flex: 1, fontSize: '0.82rem' }}>{errorMessage}</div>
+                {errorMessage.includes('not registered') && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setMode('signup');
+                      setSignupEmail(loginEmail);
+                      setErrorMessage('');
+                    }}
+                    className="auth-error-action-btn"
+                  >
+                    Sign Up →
+                  </button>
+                )}
+              </div>
+            )}
 
             {/* OAuth Buttons Stack */}
             <div className="oauth-buttons-stack">
@@ -278,11 +323,11 @@ export default function Login({ onLogin }) {
             </div>
 
             <div className="auth-divider">
-              <span>{mode === 'signin' ? 'or sign in with credentials' : 'or register with email'}</span>
+              <span>{mode === 'signin' ? 'or sign in with registered email' : 'or register with email'}</span>
             </div>
 
             {mode === 'signin' ? (
-              /* Sign In Form */
+              /* Sign In Form with strict registered account check */
               <form onSubmit={handleSignInSubmit}>
                 <div style={{ position: 'relative', marginBottom: '10px' }}>
                   <Mail
@@ -293,7 +338,7 @@ export default function Login({ onLogin }) {
                   <input
                     type="email"
                     className="auth-input-field"
-                    placeholder="Email address"
+                    placeholder="Registered Email (e.g. alex.mercer.luxe@gmail.com)"
                     value={loginEmail}
                     onChange={(e) => setLoginEmail(e.target.value)}
                     style={{ paddingLeft: '42px' }}
@@ -341,7 +386,7 @@ export default function Login({ onLogin }) {
                   style={{ width: '100%', padding: '13px', fontSize: '0.95rem', justifyContent: 'center' }}
                 >
                   {isAuthorizing ? (
-                    <span>Authenticating...</span>
+                    <span>Verifying Credentials...</span>
                   ) : (
                     <>
                       <span>Sign In to Aura Luxe</span>
@@ -349,9 +394,19 @@ export default function Login({ onLogin }) {
                     </>
                   )}
                 </button>
+
+                <div style={{ textAlign: 'center', marginTop: '10px', fontSize: '0.78rem', color: '#64748b' }}>
+                  💡 Not registered yet?{' '}
+                  <span
+                    onClick={() => switchMode('signup')}
+                    style={{ color: '#818cf8', fontWeight: '700', cursor: 'pointer', textDecoration: 'underline' }}
+                  >
+                    Create Account here
+                  </span>
+                </div>
               </form>
             ) : (
-              /* Sign Up Form */
+              /* Sign Up Form with persistent registration */
               <form onSubmit={handleSignUpSubmit}>
                 <div style={{ position: 'relative', marginBottom: '10px' }}>
                   <User
@@ -396,7 +451,7 @@ export default function Login({ onLogin }) {
                   <input
                     type="password"
                     className="auth-input-field"
-                    placeholder="Create a Secure Password"
+                    placeholder="Create Password (min. 6 chars)"
                     value={signupPassword}
                     onChange={(e) => setSignupPassword(e.target.value)}
                     style={{ paddingLeft: '42px' }}
@@ -437,7 +492,7 @@ export default function Login({ onLogin }) {
             {/* Fast 1-Click Demo Profiles */}
             <div className="demo-accounts-box" style={{ marginTop: '16px' }}>
               <span style={{ fontSize: '0.72rem', textTransform: 'uppercase', color: '#818cf8', fontWeight: '800', letterSpacing: '0.05em' }}>
-                ⚡ Fast 1-Click Demo Accounts:
+                ⚡ Fast 1-Click Pre-Registered Demo Profiles:
               </span>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginTop: '8px' }}>
                 <button
@@ -447,11 +502,12 @@ export default function Login({ onLogin }) {
                     setAuthProvider('google');
                     handleConfirmOAuth('vip');
                   }}
+                  title="Sign in as pre-registered VIP Alex Mercer"
                 >
                   <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&auto=format&fit=crop&q=80" alt="Alex" />
                   <div style={{ textAlign: 'left', lineHeight: '1.2' }}>
                     <div style={{ fontWeight: '700', fontSize: '0.8rem', color: '#fff' }}>Alex Mercer</div>
-                    <div style={{ fontSize: '0.68rem', color: '#fbbf24' }}>VIP Gold Member</div>
+                    <div style={{ fontSize: '0.68rem', color: '#fbbf24' }}>alex.mercer.luxe@gmail.com</div>
                   </div>
                 </button>
 
@@ -462,6 +518,7 @@ export default function Login({ onLogin }) {
                     setAuthProvider('github');
                     handleConfirmOAuth('github');
                   }}
+                  title="Sign in as pre-registered Sathrika Srirama"
                 >
                   <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&auto=format&fit=crop&q=80" alt="Sathrika" />
                   <div style={{ textAlign: 'left', lineHeight: '1.2' }}>

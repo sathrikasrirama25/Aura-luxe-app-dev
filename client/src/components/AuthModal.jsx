@@ -10,24 +10,35 @@ import {
   User,
   Crown,
   Zap,
-  Check
+  Check,
+  Eye,
+  EyeOff,
+  AlertCircle
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import gsap from 'gsap';
+import { authenticateUser, registerUser } from '../utils/authStore';
 
 export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
   if (!isOpen) return null;
 
   const [mode, setMode] = useState('signin'); // 'signin' or 'signup'
+  
+  // Sign In inputs
   const [emailInput, setEmailInput] = useState('');
+  const [signinPassword, setSigninPassword] = useState('');
+  const [showSigninPassword, setShowSigninPassword] = useState(false);
   
   // Registration Form State
   const [signupName, setSignupName] = useState('');
   const [signupEmail, setSignupEmail] = useState('');
   const [signupPassword, setSignupPassword] = useState('');
-  const [signupNewsletter, setSignupNewsletter] = useState(true);
 
+  // Status and Validation Messages
+  const [errorMessage, setErrorMessage] = useState('');
   const [isAuthorizing, setIsAuthorizing] = useState(false);
+
+  // OAuth Simulation State
   const [authProvider, setAuthProvider] = useState(null); // 'google', 'github', 'apple'
   const [showOAuthPopup, setShowOAuthPopup] = useState(false);
 
@@ -51,8 +62,12 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [onClose]);
 
+  const switchMode = (newMode) => {
+    setMode(newMode);
+    setErrorMessage('');
+  };
+
   const triggerLoginSuccess = (userProfile) => {
-    // Fire festive luxury confetti
     try {
       confetti({
         particleCount: 65,
@@ -67,6 +82,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
   };
 
   const handleStartOAuth = (provider) => {
+    setErrorMessage('');
     setAuthProvider(provider);
     setShowOAuthPopup(true);
   };
@@ -142,56 +158,68 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
       }
 
       triggerLoginSuccess(userProfile);
-    }, 700);
+    }, 600);
   };
 
   const handleEmailSubmit = (e) => {
     e.preventDefault();
-    if (!emailInput.trim()) return;
+    setErrorMessage('');
+
+    if (!emailInput.trim()) {
+      setErrorMessage('Please enter your email address.');
+      return;
+    }
+    if (!signinPassword.trim()) {
+      setErrorMessage('Please enter your password.');
+      return;
+    }
 
     setIsAuthorizing(true);
     setTimeout(() => {
       setIsAuthorizing(false);
-      const namePart = emailInput.split('@')[0];
-      const cleanName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
-
-      const userProfile = {
-        id: `usr_em_${Date.now()}`,
-        name: cleanName,
-        email: emailInput.trim(),
-        avatar: `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(cleanName)}`,
-        provider: 'Magic Link / Email',
-        tier: 'Member',
-        points: 500,
-        ordersCount: 0,
-        savedAddress: null
-      };
-
-      triggerLoginSuccess(userProfile);
-    }, 800);
+      try {
+        const userProfile = authenticateUser({
+          email: emailInput,
+          password: signinPassword
+        });
+        triggerLoginSuccess(userProfile);
+      } catch (err) {
+        setErrorMessage(err.message || 'Authentication failed. Please check your credentials.');
+      }
+    }, 500);
   };
 
   const handleSignupSubmit = (e) => {
     e.preventDefault();
-    if (!signupName.trim() || !signupEmail.trim()) return;
+    setErrorMessage('');
+
+    if (!signupName.trim()) {
+      setErrorMessage('Please enter your full name.');
+      return;
+    }
+    if (!signupEmail.trim()) {
+      setErrorMessage('Please enter your email address.');
+      return;
+    }
+    if (!signupPassword.trim()) {
+      setErrorMessage('Please create a password for your account.');
+      return;
+    }
 
     setIsAuthorizing(true);
     setTimeout(() => {
       setIsAuthorizing(false);
-      const userProfile = {
-        id: `usr_reg_${Date.now()}`,
-        name: signupName.trim(),
-        email: signupEmail.trim(),
-        avatar: `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(signupName.trim())}`,
-        provider: 'Aura Luxe VIP Member',
-        tier: 'VIP Gold Member',
-        points: 500, // 500 bonus points for new signup
-        ordersCount: 0,
-        savedAddress: null
-      };
-
-      triggerLoginSuccess(userProfile);
-    }, 800);
+      try {
+        const userProfile = registerUser({
+          name: signupName,
+          email: signupEmail,
+          password: signupPassword
+        });
+        triggerLoginSuccess(userProfile);
+      } catch (err) {
+        setErrorMessage(err.message || 'Registration failed. Please try again.');
+      }
+    }, 600);
   };
 
   return (
@@ -228,7 +256,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
               <button
                 type="button"
                 className={`auth-mode-tab ${mode === 'signin' ? 'active' : ''}`}
-                onClick={() => setMode('signin')}
+                onClick={() => switchMode('signin')}
               >
                 <Lock size={14} />
                 <span>Sign In</span>
@@ -236,13 +264,34 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
               <button
                 type="button"
                 className={`auth-mode-tab ${mode === 'signup' ? 'active' : ''}`}
-                onClick={() => setMode('signup')}
+                onClick={() => switchMode('signup')}
               >
                 <Sparkles size={14} color="#fbbf24" />
                 <span>Create Account / Sign Up</span>
                 <span className="auth-tab-badge">+500 pts</span>
               </button>
             </div>
+
+            {/* Error Message Alert */}
+            {errorMessage && (
+              <div className="auth-error-banner" style={{ marginTop: '14px' }}>
+                <AlertCircle size={17} style={{ flexShrink: 0 }} />
+                <div style={{ flex: 1, fontSize: '0.82rem' }}>{errorMessage}</div>
+                {errorMessage.includes('not registered') && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setMode('signup');
+                      setSignupEmail(emailInput);
+                      setErrorMessage('');
+                    }}
+                    className="auth-error-action-btn"
+                  >
+                    Sign Up →
+                  </button>
+                )}
+              </div>
+            )}
 
             {/* OAuth Buttons Stack */}
             <div className="oauth-buttons-stack" style={{ marginTop: '16px' }}>
@@ -303,27 +352,60 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
             </div>
 
             <div className="auth-divider">
-              <span>{mode === 'signin' ? 'or sign in with email' : 'or register with email'}</span>
+              <span>{mode === 'signin' ? 'or sign in with registered email' : 'or register with email'}</span>
             </div>
 
             {mode === 'signin' ? (
-              /* Sign In with Magic Link Form */
+              /* Sign In Form with email & password */
               <form onSubmit={handleEmailSubmit} style={{ marginTop: '14px' }}>
-                <div style={{ position: 'relative', marginBottom: '12px' }}>
+                <div style={{ position: 'relative', marginBottom: '10px' }}>
                   <Mail
-                    size={18}
+                    size={17}
                     color="#94a3b8"
                     style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)' }}
                   />
                   <input
                     type="email"
                     className="auth-input-field"
-                    placeholder="name@company.com"
+                    placeholder="Registered Email"
                     value={emailInput}
                     onChange={(e) => setEmailInput(e.target.value)}
                     style={{ paddingLeft: '42px' }}
                     required
                   />
+                </div>
+
+                <div style={{ position: 'relative', marginBottom: '14px' }}>
+                  <Lock
+                    size={17}
+                    color="#94a3b8"
+                    style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)' }}
+                  />
+                  <input
+                    type={showSigninPassword ? 'text' : 'password'}
+                    className="auth-input-field"
+                    placeholder="Password"
+                    value={signinPassword}
+                    onChange={(e) => setSigninPassword(e.target.value)}
+                    style={{ paddingLeft: '42px', paddingRight: '40px' }}
+                    required
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowSigninPassword(!showSigninPassword)}
+                    style={{
+                      position: 'absolute',
+                      right: '12px',
+                      top: '50%',
+                      transform: 'translateY(-50%)',
+                      background: 'none',
+                      border: 'none',
+                      color: '#94a3b8',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    {showSigninPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                  </button>
                 </div>
 
                 <button
@@ -333,10 +415,10 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
                   style={{ width: '100%', padding: '13px', fontSize: '0.95rem', justifyContent: 'center' }}
                 >
                   {isAuthorizing ? (
-                    <span>Generating Secure Link...</span>
+                    <span>Verifying Credentials...</span>
                   ) : (
                     <>
-                      <span>Sign In with Magic Link</span>
+                      <span>Sign In to Aura Luxe</span>
                       <ArrowRight size={16} />
                     </>
                   )}
@@ -388,7 +470,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
                   <input
                     type="password"
                     className="auth-input-field"
-                    placeholder="Create a Password"
+                    placeholder="Create a Password (min. 6 chars)"
                     value={signupPassword}
                     onChange={(e) => setSignupPassword(e.target.value)}
                     style={{ paddingLeft: '42px' }}
@@ -433,7 +515,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
             {/* Fast Demo Testing Switcher */}
             <div className="demo-accounts-box">
               <span style={{ fontSize: '0.74rem', textTransform: 'uppercase', color: '#818cf8', fontWeight: '800', letterSpacing: '0.05em' }}>
-                ⚡ Fast 1-Click Demo Profiles:
+                ⚡ Fast 1-Click Pre-Registered Profiles:
               </span>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginTop: '8px' }}>
                 <button
@@ -447,7 +529,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
                   <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&auto=format&fit=crop&q=80" alt="Alex" />
                   <div style={{ textAlign: 'left', lineHeight: '1.2' }}>
                     <div style={{ fontWeight: '700', fontSize: '0.8rem', color: '#fff' }}>Alex Mercer</div>
-                    <div style={{ fontSize: '0.68rem', color: '#fbbf24' }}>VIP Gold Member</div>
+                    <div style={{ fontSize: '0.68rem', color: '#fbbf24' }}>alex.mercer.luxe@gmail.com</div>
                   </div>
                 </button>
 
@@ -475,7 +557,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
                   Don't have an account yet?{' '}
                   <button
                     type="button"
-                    onClick={() => setMode('signup')}
+                    onClick={() => switchMode('signup')}
                     style={{ background: 'none', border: 'none', color: '#818cf8', fontWeight: '700', cursor: 'pointer', textDecoration: 'underline' }}
                   >
                     Create one & get 20% off
@@ -486,7 +568,7 @@ export default function AuthModal({ isOpen, onClose, onLoginSuccess }) {
                   Already an Aura Luxe member?{' '}
                   <button
                     type="button"
-                    onClick={() => setMode('signin')}
+                    onClick={() => switchMode('signin')}
                     style={{ background: 'none', border: 'none', color: '#818cf8', fontWeight: '700', cursor: 'pointer', textDecoration: 'underline' }}
                   >
                     Sign In here

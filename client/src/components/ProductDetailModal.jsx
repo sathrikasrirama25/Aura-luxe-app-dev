@@ -43,7 +43,14 @@ export default function ProductDetailModal({
     ? product.images
     : ['https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&auto=format&fit=crop&q=80'];
 
-  // GSAP modal entrance animation
+  // GSAP modal entrance animation & state reset
+  useEffect(() => {
+    setActiveImgIdx(0);
+    setSelectedSize((product.sizes && product.sizes[0]) || 'Standard');
+    setSelectedColor((product.colors && product.colors[0]) || 'Default');
+    setPincodeStatus(null);
+  }, [product.id]);
+
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') onClose();
@@ -325,8 +332,7 @@ export default function ProductDetailModal({
                 <span>Buy Now (Instant Checkout)</span>
               </button>
             </div>
-<ReviewsSection
- productId={product.id} />
+
             {/* Value Guarantees */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginTop: '24px', paddingTop: '20px', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.78rem', color: '#94a3b8' }}>

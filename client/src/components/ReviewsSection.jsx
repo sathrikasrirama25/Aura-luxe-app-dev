@@ -22,6 +22,8 @@ const SAMPLE_REVIEWERS = [
 ];
 
 export default function ReviewsSection({ product, currentUser, onOpenAuth }) {
+  if (!product || !product.id) return null;
+
   const [filterRating, setFilterRating] = useState('all'); // 'all', '5', '4', '3-below'
   const [sortBy, setSortBy] = useState('helpful'); // 'helpful', 'recent', 'highest', 'lowest'
   const [showReviewForm, setShowReviewForm] = useState(false);
