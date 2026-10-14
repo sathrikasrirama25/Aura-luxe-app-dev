@@ -46,7 +46,13 @@ export default function App() {
   const [wishlistIds, setWishlistIds] = useState(['shoe-01', 'women-01', 'men-01', 'beauty-01']);
   const [orders, setOrders] = useState([]);
   const [savedUser, setSavedUser] = useState(null);
-const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+    try {
+      return !!localStorage.getItem('auraluxe_user') || localStorage.getItem('auraluxe_guest') === 'true';
+    } catch {
+      return false;
+    }
+  });
   const [appliedCoupon, setAppliedCoupon] = useState(null);
 
   // Authenticated User State (OAuth / Profile)
@@ -91,6 +97,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLoginSuccess = (user) => {
     setCurrentUser(user);
+    setIsLoggedIn(true);
     try {
       localStorage.setItem('auraluxe_user', JSON.stringify(user));
     } catch (e) {}
@@ -101,14 +108,16 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
         savedAddress: user.savedAddress
       }));
     }
-    addToast(`Welcome back, ${user.name}! VIP privileges activated ✨`, 'success');
+    addToast(`Welcome, ${user.name}! VIP perks & OAuth profile synced ✨`, 'success');
   };
 
   const handleLogout = () => {
     setCurrentUser(null);
     try {
       localStorage.removeItem('auraluxe_user');
+      localStorage.removeItem('auraluxe_guest');
     } catch (e) {}
+    setIsLoggedIn(false);
     addToast('You have been signed out successfully.', 'info');
   };
 
@@ -440,19 +449,44 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
   // Wishlist items
   const wishlistProducts = products.filter((p) => wishlistIds.includes(p.id));
 
-  if (!isLoggedIn) {
-    return <Login onLogin={() => setIsLoggedIn(true)} />;
-  }
+  const handleLoginFromGate = (userProfile) => {
+    setIsLoggedIn(true);
+    if (userProfile) {
+      handleLoginSuccess(userProfile);
+    }
+  };
 
+  if (!isLoggedIn) {
+    return <Login onLogin={handleLoginFromGate} />;
+  }
 
   return (
     <div className="app-root">
       {/* Top Banner */}
-      <div className="announcement-bar">
+      <div className="announcement-bar" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', flexWrap: 'wrap' }}>
         <span className="announcement-badge">NEW DROP</span>
         <span>
           Spring / Summer 2026 Collection Live — Use Code <strong style={{ color: '#fbbf24' }}>AURA50</strong> for 50% Flat Off!
         </span>
+        {!currentUser && (
+          <button
+            type="button"
+            onClick={() => setIsAuthOpen(true)}
+            style={{
+              marginLeft: '8px',
+              background: 'rgba(251, 191, 36, 0.15)',
+              border: '1px solid rgba(251, 191, 36, 0.4)',
+              borderRadius: '20px',
+              padding: '2px 10px',
+              color: '#fbbf24',
+              fontSize: '0.74rem',
+              fontWeight: '700',
+              cursor: 'pointer'
+            }}
+          >
+            Sign In / Register with OAuth ✨
+          </button>
+        )}
       </div>
 
       {/* Global Header */}
@@ -604,7 +638,8 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
         onClose={() => setIsCheckoutOpen(false)}
         cartItems={cart}
         appliedCoupon={appliedCoupon}
-        savedUser={savedUser}
+        savedUser={currentUser || savedUser}
+        onOpenAuth={() => setIsAuthOpen(true)}
         onOrderPlaced={handleOrderPlaced}
       />
 

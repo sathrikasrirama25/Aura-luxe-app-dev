@@ -101,13 +101,13 @@ export default function Header({
             </button>
           ) : (
             <button
-              className="action-pill-btn"
+              className="action-pill-btn header-auth-btn"
               onClick={onOpenAuth}
-              title="Sign in with Google, GitHub or Apple OAuth"
-              style={{ border: '1px solid rgba(129, 140, 248, 0.35)', color: '#c7d2fe' }}
+              title="Sign In or Register with Google, GitHub or Apple OAuth"
             >
-              <User size={17} />
-              <span>Sign In</span>
+              <User size={16} color="#818cf8" />
+              <span style={{ fontWeight: '700' }}>Sign In / Register</span>
+              <span className="auth-pill-badge">OAuth</span>
             </button>
           )}
 

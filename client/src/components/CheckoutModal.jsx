@@ -22,6 +22,7 @@ export default function CheckoutModal({
   cartItems = [],
   appliedCoupon,
   savedUser,
+  onOpenAuth,
   onOrderPlaced
 }) {
   if (!isOpen) return null;
@@ -164,9 +165,52 @@ export default function CheckoutModal({
             <h3 style={{ fontSize: '1.4rem', fontWeight: '800', marginBottom: '8px' }}>
               Where should we deliver?
             </h3>
-            <p style={{ fontSize: '0.86rem', color: '#94a3b8', marginBottom: '24px' }}>
+            <p style={{ fontSize: '0.86rem', color: '#94a3b8', marginBottom: '20px' }}>
               Enter your verified shipping address for express courier tracking.
             </p>
+
+            {!savedUser && onOpenAuth && (
+              <div
+                style={{
+                  background: 'rgba(99, 102, 241, 0.1)',
+                  border: '1px solid rgba(129, 140, 248, 0.3)',
+                  borderRadius: '12px',
+                  padding: '12px 16px',
+                  marginBottom: '20px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: '12px'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <ShieldCheck size={18} color="#818cf8" />
+                  <span style={{ fontSize: '0.84rem', color: '#e2e8f0' }}>
+                    Have an account? <strong>Sign in with Google / GitHub OAuth</strong> to auto-fill address & earn 500 points!
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    onClose();
+                    onOpenAuth();
+                  }}
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    borderRadius: '8px',
+                    padding: '6px 12px',
+                    color: '#fff',
+                    fontSize: '0.8rem',
+                    fontWeight: '700',
+                    cursor: 'pointer',
+                    whiteSpace: 'nowrap'
+                  }}
+                >
+                  Sign In / OAuth →
+                </button>
+              </div>
+            )}
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
               <div>
