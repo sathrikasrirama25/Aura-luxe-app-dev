@@ -1,11 +1,11 @@
 import React from 'react';
 import { ShoppingBag, ShieldCheck, Truck, RotateCcw, Heart, Sparkles } from 'lucide-react';
 
-export default function Footer({ brandName = 'AURALUXE', onSelectCategory }) {
+export default function Footer({ brandName = 'AURALUXE', onSelectCategory, onOpenHelp }) {
   return (
     <footer style={{ background: '#060910', borderTop: '1px solid rgba(255, 255, 255, 0.08)', padding: '60px 0 30px', marginTop: '60px' }}>
       <div className="container">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '40px', marginBottom: '48px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '36px', marginBottom: '48px' }}>
           {/* Brand Info */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px' }}>
@@ -15,9 +15,9 @@ export default function Footer({ brandName = 'AURALUXE', onSelectCategory }) {
               <span className="brand-title" style={{ fontSize: '1.4rem' }}>{brandName}</span>
             </div>
             <p style={{ fontSize: '0.88rem', color: '#94a3b8', lineHeight: '1.6', maxWidth: '300px' }}>
-              The modern shopping destination engineered on the MERN stack with Vite + React and GSAP motion. Curating top-tier fashion, footwear, cosmetics, and lifestyle design.
+              The modern shopping destination engineered on the MERN stack with Vite + React and GSAP motion. Curating 135+ luxury items across fashion, timepieces, jewelry, and high-fidelity electronics.
             </p>
-            <div style={{ display: 'flex', gap: '12px', marginTop: '20px' }}>
+            <div style={{ display: 'flex', gap: '10px', marginTop: '20px', flexWrap: 'wrap' }}>
               <span style={{ fontSize: '0.74rem', background: 'rgba(99, 102, 241, 0.15)', color: '#818cf8', padding: '4px 10px', borderRadius: '6px', fontWeight: '700' }}>
                 ⚡ Vite 5 + React 18
               </span>
@@ -30,10 +30,10 @@ export default function Footer({ brandName = 'AURALUXE', onSelectCategory }) {
           {/* Quick Category Navigation */}
           <div>
             <h4 style={{ fontSize: '1rem', fontWeight: '700', color: '#fff', marginBottom: '16px' }}>
-              Popular Categories
+              Curated Collections
             </h4>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.88rem', color: '#94a3b8' }}>
-              {['Shoes', 'Bags', 'Women', 'Men', 'Makeup & Beauty', 'Home Decor', 'Home Utilities'].map((cat) => (
+            <ul style={{ listStyle: 'none', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', fontSize: '0.86rem', color: '#94a3b8' }}>
+              {['Watches', 'Jewelry', 'Fragrances', 'Eyewear', 'Electronics', 'Shoes', 'Bags', 'Women', 'Men', 'Home Decor'].map((cat) => (
                 <li key={cat}>
                   <button
                     onClick={() => {
@@ -51,44 +51,71 @@ export default function Footer({ brandName = 'AURALUXE', onSelectCategory }) {
             </ul>
           </div>
 
-          {/* Guarantees */}
+          {/* Guarantees & Help Center Links */}
           <div>
             <h4 style={{ fontSize: '1rem', fontWeight: '700', color: '#fff', marginBottom: '16px' }}>
-              The {brandName} Promise
+              Client Services
             </h4>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', fontSize: '0.85rem', color: '#94a3b8' }}>
-              <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                <ShieldCheck size={18} color="#10b981" />
-                <span>100% Verified Authentic Products</span>
-              </div>
-              <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                <Truck size={18} color="#818cf8" />
-                <span>48-Hour Express Dispatch Guarantee</span>
-              </div>
-              <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                <RotateCcw size={18} color="#fbbf24" />
-                <span>7-Day No-Questions-Asked Returns</span>
-              </div>
-              <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                <Sparkles size={18} color="#ec4899" />
-                <span>Hand-inspected by Quality Experts</span>
-              </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.85rem' }}>
+              <button
+                onClick={() => onOpenHelp && onOpenHelp('track')}
+                style={{ background: 'transparent', color: '#94a3b8', display: 'flex', gap: '10px', alignItems: 'center', textAlign: 'left', padding: 0 }}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#818cf8'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#94a3b8'}
+              >
+                <Truck size={17} color="#818cf8" />
+                <span>Track Live Order & Shipments</span>
+              </button>
+
+              <button
+                onClick={() => onOpenHelp && onOpenHelp('chat')}
+                style={{ background: 'transparent', color: '#94a3b8', display: 'flex', gap: '10px', alignItems: 'center', textAlign: 'left', padding: 0 }}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#fbbf24'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#94a3b8'}
+              >
+                <Sparkles size={17} color="#fbbf24" />
+                <span>24/7 AuraBot Shopping Concierge</span>
+              </button>
+
+              <button
+                onClick={() => onOpenHelp && onOpenHelp('faq')}
+                style={{ background: 'transparent', color: '#94a3b8', display: 'flex', gap: '10px', alignItems: 'center', textAlign: 'left', padding: 0 }}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#10b981'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#94a3b8'}
+              >
+                <RotateCcw size={17} color="#10b981" />
+                <span>7-Day Return Policy & FAQs</span>
+              </button>
+
+              <button
+                onClick={() => onOpenHelp && onOpenHelp('contact')}
+                style={{ background: 'transparent', color: '#94a3b8', display: 'flex', gap: '10px', alignItems: 'center', textAlign: 'left', padding: 0 }}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#38bdf8'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#94a3b8'}
+              >
+                <ShieldCheck size={17} color="#38bdf8" />
+                <span>100% Verified Authenticity Guarantee</span>
+              </button>
             </div>
           </div>
 
           {/* Customer Support & Security */}
           <div>
             <h4 style={{ fontSize: '1rem', fontWeight: '700', color: '#fff', marginBottom: '16px' }}>
-              Need Assistance?
+              Direct Concierge
             </h4>
             <p style={{ fontSize: '0.85rem', color: '#94a3b8', lineHeight: '1.6', marginBottom: '12px' }}>
-              Our dedicated concierge team is available 24/7 for inquiries, sizing consultations, and tracking support.
+              VIP client advisors available 24/7 for bespoke inquiries, orders, and consultations.
             </p>
-            <div style={{ fontSize: '0.88rem', color: '#fff', fontWeight: '700', marginBottom: '6px' }}>
-              support@{brandName.toLowerCase()}app.com
-            </div>
+            <button
+              onClick={() => onOpenHelp && onOpenHelp('contact')}
+              className="btn-gold"
+              style={{ padding: '8px 16px', fontSize: '0.82rem', marginBottom: '10px' }}
+            >
+              Contact Concierge Desk
+            </button>
             <div style={{ fontSize: '0.8rem', color: '#64748b' }}>
-              Toll-Free: +91 (800) 425-LUXE
+              Toll-Free: 1800-888-AURA (2872)
             </div>
           </div>
         </div>

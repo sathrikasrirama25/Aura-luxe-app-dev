@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { ShoppingBag, Heart, Search, Package, Sparkles, X } from 'lucide-react';
+import { ShoppingBag, Heart, Search, Package, Sparkles, X, HelpCircle, User, LogIn } from 'lucide-react';
 import gsap from 'gsap';
 
 export default function Header({
@@ -12,7 +12,11 @@ export default function Header({
   onOpenCart,
   onOpenWishlist,
   onOpenOrders,
-  onOpenBrandIdeas
+  onOpenBrandIdeas,
+  currentUser,
+  onOpenAuth,
+  onOpenProfile,
+  onOpenHelp
 }) {
   const cartBadgeRef = useRef(null);
   const prevCartCountRef = useRef(cartCount);
@@ -68,6 +72,45 @@ export default function Header({
 
         {/* Navigation Action Buttons */}
         <div className="nav-actions">
+          {/* Help & Support Button */}
+          <button
+            className="action-pill-btn"
+            onClick={onOpenHelp}
+            title="Help Center, Live Tracking & AuraBot Concierge"
+          >
+            <HelpCircle size={17} color="#818cf8" />
+            <span>Help</span>
+          </button>
+
+          {/* User Account / OAuth Login Button */}
+          {currentUser ? (
+            <button
+              className="action-pill-btn user-profile-btn"
+              onClick={onOpenProfile}
+              title={`VIP Account: ${currentUser.name}`}
+              style={{ border: '1px solid rgba(251, 191, 36, 0.4)', background: 'rgba(251, 191, 36, 0.1)' }}
+            >
+              <img
+                src={currentUser.avatar}
+                alt={currentUser.name}
+                className="header-avatar-thumb"
+              />
+              <span style={{ color: '#fff', fontWeight: '700' }}>
+                {currentUser.name.split(' ')[0]}
+              </span>
+            </button>
+          ) : (
+            <button
+              className="action-pill-btn"
+              onClick={onOpenAuth}
+              title="Sign in with Google, GitHub or Apple OAuth"
+              style={{ border: '1px solid rgba(129, 140, 248, 0.35)', color: '#c7d2fe' }}
+            >
+              <User size={17} />
+              <span>Sign In</span>
+            </button>
+          )}
+
           {/* Brand Name Ideas modal button */}
           <button
             className="action-pill-btn"

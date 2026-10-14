@@ -7,7 +7,12 @@ import {
   Shirt,
   HeartHandshake,
   Home,
-  Wrench
+  Wrench,
+  Watch,
+  Gem,
+  Glasses,
+  Headphones,
+  Flame
 } from 'lucide-react';
 
 const CATEGORY_ICONS = {
@@ -20,14 +25,19 @@ const CATEGORY_ICONS = {
   Beauty: HeartHandshake,
   Makeup: HeartHandshake,
   'Home Decor': Home,
-  'Home Utilities': Wrench
+  'Home Utilities': Wrench,
+  Watches: Watch,
+  Jewelry: Gem,
+  Fragrances: Flame,
+  Eyewear: Glasses,
+  Electronics: Headphones
 };
 
 export default function CategoryNav({
   categories = [],
   activeCategory,
   onSelectCategory,
-  totalProductsCount = 111
+  totalProductsCount = 136
 }) {
   return (
     <div className="category-bar-wrapper">

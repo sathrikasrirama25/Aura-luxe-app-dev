@@ -17,6 +17,9 @@ import WishlistModal from './components/WishlistModal';
 import BrandNameModal from './components/BrandNameModal';
 import Footer from './components/Footer';
 import Toast from './components/Toast';
+import AuthModal from './components/AuthModal';
+import UserProfileModal from './components/UserProfileModal';
+import HelpModal from './components/HelpModal';
 
 import { Filter, SlidersHorizontal, Sparkles, Layers } from 'lucide-react';
 import './App.css';
@@ -46,12 +49,26 @@ export default function App() {
 const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [appliedCoupon, setAppliedCoupon] = useState(null);
 
+  // Authenticated User State (OAuth / Profile)
+  const [currentUser, setCurrentUser] = useState(() => {
+    try {
+      const saved = localStorage.getItem('auraluxe_user');
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  });
+
   // Modals & Drawers state
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isWishlistOpen, setIsWishlistOpen] = useState(false);
   const [isOrdersOpen, setIsOrdersOpen] = useState(false);
   const [isBrandIdeasOpen, setIsBrandIdeasOpen] = useState(false);
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
+  const [isHelpOpen, setIsHelpOpen] = useState(false);
+  const [helpInitialTab, setHelpInitialTab] = useState('track');
   const [quickViewProduct, setQuickViewProduct] = useState(null);
 
   // Notifications
@@ -70,6 +87,34 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const removeToast = (id) => {
     setToasts((prev) => prev.filter((t) => t.id !== id));
+  };
+
+  const handleLoginSuccess = (user) => {
+    setCurrentUser(user);
+    try {
+      localStorage.setItem('auraluxe_user', JSON.stringify(user));
+    } catch (e) {}
+
+    if (user.savedAddress) {
+      setSavedUser((prev) => ({
+        ...(prev || {}),
+        savedAddress: user.savedAddress
+      }));
+    }
+    addToast(`Welcome back, ${user.name}! VIP privileges activated ✨`, 'success');
+  };
+
+  const handleLogout = () => {
+    setCurrentUser(null);
+    try {
+      localStorage.removeItem('auraluxe_user');
+    } catch (e) {}
+    addToast('You have been signed out successfully.', 'info');
+  };
+
+  const handleOpenHelp = (tab = 'track') => {
+    setHelpInitialTab(tab);
+    setIsHelpOpen(true);
   };
 
   // 1. Initial Data Fetching from Express API
@@ -422,6 +467,10 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
         onOpenWishlist={() => setIsWishlistOpen(true)}
         onOpenOrders={() => setIsOrdersOpen(true)}
         onOpenBrandIdeas={() => setIsBrandIdeasOpen(true)}
+        currentUser={currentUser}
+        onOpenAuth={() => setIsAuthOpen(true)}
+        onOpenProfile={() => setIsProfileOpen(true)}
+        onOpenHelp={() => handleOpenHelp('track')}
       />
 
       {/* Category Navigation Bar */}
@@ -515,6 +564,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
           setActiveCategory(cat);
           handleExploreClick();
         }}
+        onOpenHelp={handleOpenHelp}
       />
 
       {/* Product Detail Modal */}
@@ -526,6 +576,8 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
           onAddToCart={handleAddToCart}
           onBuyNow={handleBuyNow}
           onToggleWishlist={handleToggleWishlist}
+          currentUser={currentUser}
+          onOpenAuth={() => setIsAuthOpen(true)}
         />
       )}
 
@@ -584,6 +636,31 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
         onClose={() => setIsBrandIdeasOpen(false)}
         activeBrandName={brandName}
         onSelectBrandName={handleBrandChange}
+      />
+
+      {/* OAuth Authentication Modal */}
+      <AuthModal
+        isOpen={isAuthOpen}
+        onClose={() => setIsAuthOpen(false)}
+        onLoginSuccess={handleLoginSuccess}
+      />
+
+      {/* User Profile & Membership Modal */}
+      <UserProfileModal
+        user={currentUser}
+        isOpen={isProfileOpen}
+        onClose={() => setIsProfileOpen(false)}
+        onLogout={handleLogout}
+        onOpenOrders={() => setIsOrdersOpen(true)}
+        onOpenWishlist={() => setIsWishlistOpen(true)}
+      />
+
+      {/* Help & Support Center Modal */}
+      <HelpModal
+        isOpen={isHelpOpen}
+        onClose={() => setIsHelpOpen(false)}
+        initialTab={helpInitialTab}
+        orders={orders}
       />
 
       {/* Toast Notification Stack */}

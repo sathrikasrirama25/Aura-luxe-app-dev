@@ -18,8 +18,19 @@
     "discount": 33,
     "rating": 4.8,
     "reviewsCount": 2480,
-    "sizes": ["6", "7", "8", "9", "10", "11"],
-    "colors": ["Crimson Red", "Obsidian Black", "Pure White"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Crimson Red",
+      "Obsidian Black",
+      "Pure White"
+    ],
     "material": "Engineered Breathable Mesh & Zoom Air Sole",
     "stockStatus": "In Stock",
     "offerLabel": "Bestseller",
@@ -50,8 +61,18 @@
     "discount": 39,
     "rating": 4.9,
     "reviewsCount": 1850,
-    "sizes": ["7", "8", "9", "10", "11"],
-    "colors": ["Core Black", "Cloud White", "Solar Red"],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Core Black",
+      "Cloud White",
+      "Solar Red"
+    ],
     "material": "Primeknit+ Textile with Continental Rubber Sole",
     "stockStatus": "In Stock",
     "offerLabel": "Mega Sale",
@@ -82,8 +103,18 @@
     "discount": 50,
     "rating": 4.5,
     "reviewsCount": 3120,
-    "sizes": ["6", "7", "8", "9", "10"],
-    "colors": ["White-Black", "All Black", "Navy Blue"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "colors": [
+      "White-Black",
+      "All Black",
+      "Navy Blue"
+    ],
     "material": "Synthetic Soft Leather & Cushioned Cupsole",
     "stockStatus": "In Stock",
     "offerLabel": "50% OFF",
@@ -114,8 +145,18 @@
     "discount": 40,
     "rating": 4.6,
     "reviewsCount": 940,
-    "sizes": ["7", "8", "9", "10", "11"],
-    "colors": ["Cognac Brown", "Classic Black", "Tan"],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Cognac Brown",
+      "Classic Black",
+      "Tan"
+    ],
     "material": "100% Genuine Oiled Full-Grain Leather",
     "stockStatus": "In Stock",
     "offerLabel": "Handcrafted",
@@ -146,8 +187,18 @@
     "discount": 46,
     "rating": 4.4,
     "reviewsCount": 680,
-    "sizes": ["6", "7", "8", "9", "10"],
-    "colors": ["Chalk White", "Vintage Navy", "Army Olive"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "colors": [
+      "Chalk White",
+      "Vintage Navy",
+      "Army Olive"
+    ],
     "material": "Suede Overlays and Ripstop Textile Upper",
     "stockStatus": "In Stock",
     "offerLabel": "Trending Now",
@@ -178,8 +229,19 @@
     "discount": 30,
     "rating": 4.7,
     "reviewsCount": 4210,
-    "sizes": ["6", "7", "8", "9", "10", "11"],
-    "colors": ["Triple White", "Black / University Red", "Sail Grey"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Triple White",
+      "Black / University Red",
+      "Sail Grey"
+    ],
     "material": "Crisp Synthetic Leather & Rubber Cupsole",
     "stockStatus": "In Stock",
     "offerLabel": "Top Rated",
@@ -210,8 +272,18 @@
     "discount": 36,
     "rating": 4.8,
     "reviewsCount": 2190,
-    "sizes": ["6", "7", "8", "9", "10"],
-    "colors": ["Charcoal Grey", "Navy Blue", "Jet Black"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "colors": [
+      "Charcoal Grey",
+      "Navy Blue",
+      "Jet Black"
+    ],
     "material": "Breathable Stretch-Fit Mesh Knit & Memory Foam",
     "stockStatus": "In Stock",
     "offerLabel": "Slip-In Tech",
@@ -242,8 +314,17 @@
     "discount": 37,
     "rating": 4.7,
     "reviewsCount": 820,
-    "sizes": ["7", "8", "9", "10", "11"],
-    "colors": ["Polished Black", "Dark Tan"],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Polished Black",
+      "Dark Tan"
+    ],
     "material": "Premium Full Grain Cowhide Leather",
     "stockStatus": "In Stock",
     "offerLabel": "Executive Pick",
@@ -274,8 +355,17 @@
     "discount": 31,
     "rating": 4.9,
     "reviewsCount": 1420,
-    "sizes": ["7", "8", "9", "10", "11"],
-    "colors": ["Electric Blue / Lime", "Black / Pure Silver"],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Electric Blue / Lime",
+      "Black / Pure Silver"
+    ],
     "material": "4D Guidance System & PureGEL Cushioning",
     "stockStatus": "In Stock",
     "offerLabel": "Marathon Pro",
@@ -306,8 +396,17 @@
     "discount": 42,
     "rating": 4.6,
     "reviewsCount": 1670,
-    "sizes": ["7", "8", "9", "10"],
-    "colors": ["Pitch Gray", "Academy Navy", "Stealth Black"],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "colors": [
+      "Pitch Gray",
+      "Academy Navy",
+      "Stealth Black"
+    ],
     "material": "Breathable 3-Color Mesh with Durable Leather Overlays",
     "stockStatus": "In Stock",
     "offerLabel": "Deal of Day",
@@ -338,8 +437,19 @@
     "discount": 40,
     "rating": 4.8,
     "reviewsCount": 2840,
-    "sizes": ["6", "7", "8", "9", "10", "11"],
-    "colors": ["Grey / White", "Navy Blue", "Burgundy"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Grey / White",
+      "Navy Blue",
+      "Burgundy"
+    ],
     "material": "Suede and Mesh Upper with ENCAP Midsole",
     "stockStatus": "In Stock",
     "offerLabel": "Iconic Heritage",
@@ -370,8 +480,18 @@
     "discount": 34,
     "rating": 4.7,
     "reviewsCount": 5600,
-    "sizes": ["6", "7", "8", "9", "10"],
-    "colors": ["Classic Black", "Optic White", "Crimson Red"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "colors": [
+      "Classic Black",
+      "Optic White",
+      "Crimson Red"
+    ],
     "material": "100% Heavy Cotton Canvas & Vulcanized Gum Sole",
     "stockStatus": "In Stock",
     "offerLabel": "All Time Classic",
@@ -402,8 +522,18 @@
     "discount": 33,
     "rating": 4.6,
     "reviewsCount": 3890,
-    "sizes": ["6", "7", "8", "9", "10"],
-    "colors": ["Black & White", "Checkerboard", "Navy"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "colors": [
+      "Black & White",
+      "Checkerboard",
+      "Navy"
+    ],
     "material": "Suede & Canvas with Vulcanized Waffle Outsole",
     "stockStatus": "In Stock",
     "offerLabel": "Skater Essential",
@@ -434,8 +564,17 @@
     "discount": 40,
     "rating": 4.3,
     "reviewsCount": 1120,
-    "sizes": ["6", "7", "8", "9", "10"],
-    "colors": ["Jet Black", "Dark Brown"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "colors": [
+      "Jet Black",
+      "Dark Brown"
+    ],
     "material": "Polished PU Leather with TPR Sole",
     "stockStatus": "In Stock",
     "offerLabel": "Super Value",
@@ -466,8 +605,18 @@
     "discount": 39,
     "rating": 4.5,
     "reviewsCount": 730,
-    "sizes": ["5", "6", "7", "8", "9"],
-    "colors": ["Nude Blush", "Midnight Black", "Glossy Burgundy"],
+    "sizes": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "colors": [
+      "Nude Blush",
+      "Midnight Black",
+      "Glossy Burgundy"
+    ],
     "material": "Patent Faux Leather with 2.5 Inch Block Heel",
     "stockStatus": "In Stock",
     "offerLabel": "Party & Office",
@@ -498,8 +647,18 @@
     "discount": 35,
     "rating": 4.8,
     "reviewsCount": 1150,
-    "sizes": ["7", "8", "9", "10", "11"],
-    "colors": ["Honey Nubuck", "Black Oiled", "Chocolate Brown"],
+    "sizes": [
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Honey Nubuck",
+      "Black Oiled",
+      "Chocolate Brown"
+    ],
     "material": "Full Nubuck Leather & Steel Shank Welt",
     "stockStatus": "In Stock",
     "offerLabel": "Heavy Duty",
@@ -530,8 +689,18 @@
     "discount": 59,
     "rating": 4.4,
     "reviewsCount": 1580,
-    "sizes": ["6", "7", "8", "9", "10"],
-    "colors": ["Suede Tan", "Rich Navy", "Dark Walnut"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "colors": [
+      "Suede Tan",
+      "Rich Navy",
+      "Dark Walnut"
+    ],
     "material": "Synthetic Soft Suede with Flexible Rubber Driving Sole",
     "stockStatus": "In Stock",
     "offerLabel": "59% OFF",
@@ -562,8 +731,19 @@
     "discount": 45,
     "rating": 4.5,
     "reviewsCount": 2740,
-    "sizes": ["6", "7", "8", "9", "10", "11"],
-    "colors": ["Peacoat Navy", "Castlerock Black", "High Risk Red"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Peacoat Navy",
+      "Castlerock Black",
+      "High Risk Red"
+    ],
     "material": "Air Mesh with SoftFoam+ Sockliner",
     "stockStatus": "In Stock",
     "offerLabel": "Hot Deal",
@@ -594,8 +774,18 @@
     "discount": 33,
     "rating": 4.8,
     "reviewsCount": 4900,
-    "sizes": ["6", "7", "8", "9", "10"],
-    "colors": ["White / Fairway Green", "White / Navy", "All White"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "colors": [
+      "White / Fairway Green",
+      "White / Navy",
+      "All White"
+    ],
     "material": "Primegreen Recycled Vegan Leather",
     "stockStatus": "In Stock",
     "offerLabel": "Street Icon",
@@ -626,8 +816,20 @@
     "discount": 34,
     "rating": 4.7,
     "reviewsCount": 6120,
-    "sizes": ["6", "7", "8", "9", "10", "11"],
-    "colors": ["Army Green", "Pure White", "Slate Navy", "Lavender"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Army Green",
+      "Pure White",
+      "Slate Navy",
+      "Lavender"
+    ],
     "material": "Croslite Lightweight Foam Resin",
     "stockStatus": "In Stock",
     "offerLabel": "All-Weather",
@@ -658,8 +860,18 @@
     "discount": 40,
     "rating": 4.4,
     "reviewsCount": 3410,
-    "sizes": ["6", "7", "8", "9", "10"],
-    "colors": ["Black / Red", "Grey / Orange", "Navy / Yellow"],
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "colors": [
+      "Black / Red",
+      "Grey / Orange",
+      "Navy / Yellow"
+    ],
     "material": "Synthetic Webbing Strap with Phylon Sole",
     "stockStatus": "In Stock",
     "offerLabel": "Budget Hero",
@@ -671,7 +883,6 @@
       "detail": "High-grip deep groove rubber traction lugs"
     }
   },
-
   {
     "id": "bag-01",
     "name": "Wildcraft 45L Adventure Trekking Rucksack",
@@ -690,8 +901,14 @@
     "discount": 44,
     "rating": 4.7,
     "reviewsCount": 1940,
-    "sizes": ["45L"],
-    "colors": ["Alpine Green", "Charcoal Grey", "Navy Teal"],
+    "sizes": [
+      "45L"
+    ],
+    "colors": [
+      "Alpine Green",
+      "Charcoal Grey",
+      "Navy Teal"
+    ],
     "material": "Water-Resistant Ripstop Polyester",
     "stockStatus": "In Stock",
     "offerLabel": "Adventure Ready"
@@ -713,8 +930,16 @@
     "discount": 50,
     "rating": 4.6,
     "reviewsCount": 2310,
-    "sizes": ["Cabin (55cm)", "Medium (68cm)", "Large (78cm)"],
-    "colors": ["Ocean Teal", "Graphite Black", "Coral Sunset"],
+    "sizes": [
+      "Cabin (55cm)",
+      "Medium (68cm)",
+      "Large (78cm)"
+    ],
+    "colors": [
+      "Ocean Teal",
+      "Graphite Black",
+      "Coral Sunset"
+    ],
     "material": "Shock-Absorbing Polypropylene",
     "stockStatus": "In Stock",
     "offerLabel": "Flat 50% OFF"
@@ -736,8 +961,14 @@
     "discount": 52,
     "rating": 4.5,
     "reviewsCount": 1620,
-    "sizes": ["Large"],
-    "colors": ["Dusty Rose", "Tan Brown", "Classic Black"],
+    "sizes": [
+      "Large"
+    ],
+    "colors": [
+      "Dusty Rose",
+      "Tan Brown",
+      "Classic Black"
+    ],
     "material": "Premium Saffiano Faux Leather",
     "stockStatus": "In Stock",
     "offerLabel": "Bestseller"
@@ -759,8 +990,14 @@
     "discount": 37,
     "rating": 4.8,
     "reviewsCount": 780,
-    "sizes": ["Regular"],
-    "colors": ["Midnight Navy", "Rich Cognac", "Onyx Black"],
+    "sizes": [
+      "Regular"
+    ],
+    "colors": [
+      "Midnight Navy",
+      "Rich Cognac",
+      "Onyx Black"
+    ],
     "material": "Top Grain Bovine Leather",
     "stockStatus": "In Stock",
     "offerLabel": "Designer Luxury"
@@ -782,8 +1019,14 @@
     "discount": 47,
     "rating": 4.4,
     "reviewsCount": 890,
-    "sizes": ["Medium"],
-    "colors": ["Mustard Yellow", "Olive Green", "Charcoal"],
+    "sizes": [
+      "Medium"
+    ],
+    "colors": [
+      "Mustard Yellow",
+      "Olive Green",
+      "Charcoal"
+    ],
     "material": "Certified Vegan Eco-Leather",
     "stockStatus": "In Stock",
     "offerLabel": "Eco Choice"
@@ -805,8 +1048,14 @@
     "discount": 51,
     "rating": 4.5,
     "reviewsCount": 1140,
-    "sizes": ["Standard"],
-    "colors": ["Burgundy Wine", "Powder Blue", "Beige"],
+    "sizes": [
+      "Standard"
+    ],
+    "colors": [
+      "Burgundy Wine",
+      "Powder Blue",
+      "Beige"
+    ],
     "material": "Soft Grain Polyurethane",
     "stockStatus": "In Stock",
     "offerLabel": "Top Rated"
@@ -828,8 +1077,15 @@
     "discount": 53,
     "rating": 4.6,
     "reviewsCount": 1420,
-    "sizes": ["Cabin (55cm)", "Medium (65cm)"],
-    "colors": ["Silver Frost", "Navy Blue", "Matte Black"],
+    "sizes": [
+      "Cabin (55cm)",
+      "Medium (65cm)"
+    ],
+    "colors": [
+      "Silver Frost",
+      "Navy Blue",
+      "Matte Black"
+    ],
     "material": "German Polycarbonate Matrix",
     "stockStatus": "In Stock",
     "offerLabel": "53% OFF"
@@ -851,8 +1107,14 @@
     "discount": 40,
     "rating": 4.3,
     "reviewsCount": 2180,
-    "sizes": ["28L"],
-    "colors": ["Steel Grey", "Electric Blue", "Camo Black"],
+    "sizes": [
+      "28L"
+    ],
+    "colors": [
+      "Steel Grey",
+      "Electric Blue",
+      "Camo Black"
+    ],
     "material": "600D Dobby Polyester",
     "stockStatus": "In Stock",
     "offerLabel": "Student Special"
@@ -874,8 +1136,13 @@
     "discount": 33,
     "rating": 4.9,
     "reviewsCount": 640,
-    "sizes": ["Compact"],
-    "colors": ["Warm Brown", "Classic Black"],
+    "sizes": [
+      "Compact"
+    ],
+    "colors": [
+      "Warm Brown",
+      "Classic Black"
+    ],
     "material": "100% Genuine Supple Cowhide",
     "stockStatus": "In Stock",
     "offerLabel": "Luxury Pick"
@@ -897,8 +1164,14 @@
     "discount": 48,
     "rating": 4.4,
     "reviewsCount": 3150,
-    "sizes": ["32L"],
-    "colors": ["Neon Pop", "Galaxy Purple", "Sonic Blue"],
+    "sizes": [
+      "32L"
+    ],
+    "colors": [
+      "Neon Pop",
+      "Galaxy Purple",
+      "Sonic Blue"
+    ],
     "material": "Heavy Duty Printed Polyester",
     "stockStatus": "In Stock",
     "offerLabel": "Back to School"
@@ -920,8 +1193,14 @@
     "discount": 35,
     "rating": 4.8,
     "reviewsCount": 920,
-    "sizes": ["24L"],
-    "colors": ["Olive Ochre", "Raven Black", "Bone White"],
+    "sizes": [
+      "24L"
+    ],
+    "colors": [
+      "Olive Ochre",
+      "Raven Black",
+      "Bone White"
+    ],
     "material": "Vegan Leather & Ballistic Nylon",
     "stockStatus": "In Stock",
     "offerLabel": "Minimalist"
@@ -942,8 +1221,15 @@
     "discount": 50,
     "rating": 4.7,
     "reviewsCount": 850,
-    "sizes": ["13-14 Inch", "15-16 Inch"],
-    "colors": ["Caramel Tan", "Forest Green", "Midnight Blue"],
+    "sizes": [
+      "13-14 Inch",
+      "15-16 Inch"
+    ],
+    "colors": [
+      "Caramel Tan",
+      "Forest Green",
+      "Midnight Blue"
+    ],
     "material": "Recycled Microfiber Vegan Leather",
     "stockStatus": "In Stock",
     "offerLabel": "Flat 50%"
@@ -964,8 +1250,14 @@
     "discount": 35,
     "rating": 4.9,
     "reviewsCount": 1100,
-    "sizes": ["Cabin (38L)"],
-    "colors": ["Turquoise Dream", "Terracotta Red", "Deep Slate"],
+    "sizes": [
+      "Cabin (38L)"
+    ],
+    "colors": [
+      "Turquoise Dream",
+      "Terracotta Red",
+      "Deep Slate"
+    ],
     "material": "Makrolon High-Impact Polycarbonate",
     "stockStatus": "In Stock",
     "offerLabel": "Trending"
@@ -986,8 +1278,14 @@
     "discount": 46,
     "rating": 4.4,
     "reviewsCount": 1340,
-    "sizes": ["Free Size"],
-    "colors": ["Natural Ecru", "Washed Charcoal", "Sage Green"],
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Natural Ecru",
+      "Washed Charcoal",
+      "Sage Green"
+    ],
     "material": "100% Heavy Organic Cotton Canvas",
     "stockStatus": "In Stock",
     "offerLabel": "Sustainable"
@@ -1008,13 +1306,17 @@
     "discount": 34,
     "rating": 4.9,
     "reviewsCount": 420,
-    "sizes": ["Standard"],
-    "colors": ["Mahogany Brown", "Pitch Black"],
+    "sizes": [
+      "Standard"
+    ],
+    "colors": [
+      "Mahogany Brown",
+      "Pitch Black"
+    ],
     "material": "Top-Grain Italian Milled Leather",
     "stockStatus": "In Stock",
     "offerLabel": "Executive Prestige"
   },
-
   {
     "id": "women-01",
     "name": "Zara Floral Tiered Midi Dress",
@@ -1032,8 +1334,18 @@
     "discount": 40,
     "rating": 4.7,
     "reviewsCount": 1820,
-    "sizes": ["XS", "S", "M", "L", "XL"],
-    "colors": ["Pastel Lilac", "Sage Floral", "Sunshine Yellow"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Pastel Lilac",
+      "Sage Floral",
+      "Sunshine Yellow"
+    ],
     "material": "100% Breathable Viscose Georgette",
     "stockStatus": "In Stock",
     "offerLabel": "Summer Chic"
@@ -1054,8 +1366,17 @@
     "discount": 40,
     "rating": 4.5,
     "reviewsCount": 940,
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": ["Alabaster White", "Mocha Brown", "Jet Black"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Alabaster White",
+      "Mocha Brown",
+      "Jet Black"
+    ],
     "material": "Cotton Elastane Blend",
     "stockStatus": "In Stock",
     "offerLabel": "Daily Essential"
@@ -1076,8 +1397,18 @@
     "discount": 40,
     "rating": 4.8,
     "reviewsCount": 3100,
-    "sizes": ["26", "28", "30", "32", "34"],
-    "colors": ["Indigo Blue", "Washed Black", "Midstone Blue"],
+    "sizes": [
+      "26",
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "colors": [
+      "Indigo Blue",
+      "Washed Black",
+      "Midstone Blue"
+    ],
     "material": "92% Cotton, 6% Polyester, 2% Elastane",
     "stockStatus": "In Stock",
     "offerLabel": "Stellar Stretch"
@@ -1098,8 +1429,18 @@
     "discount": 50,
     "rating": 4.7,
     "reviewsCount": 1450,
-    "sizes": ["32", "34", "36", "38", "40"],
-    "colors": ["Emerald Green", "Royal Magenta", "Midnight Blue"],
+    "sizes": [
+      "32",
+      "34",
+      "36",
+      "38",
+      "40"
+    ],
+    "colors": [
+      "Emerald Green",
+      "Royal Magenta",
+      "Midnight Blue"
+    ],
     "material": "Chanderi Silk Blend with Cotton Lining",
     "stockStatus": "In Stock",
     "offerLabel": "Festive Special"
@@ -1120,8 +1461,17 @@
     "discount": 46,
     "rating": 4.4,
     "reviewsCount": 1120,
-    "sizes": ["XS", "S", "M", "L"],
-    "colors": ["Vintage Grey", "Washed Lilac", "Chalk White"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Vintage Grey",
+      "Washed Lilac",
+      "Chalk White"
+    ],
     "material": "100% Bio-Washed Combed Cotton",
     "stockStatus": "In Stock",
     "offerLabel": "Streetwear"
@@ -1142,8 +1492,16 @@
     "discount": 45,
     "rating": 4.6,
     "reviewsCount": 780,
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": ["Blush Pink", "Navy Floral"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Blush Pink",
+      "Navy Floral"
+    ],
     "material": "Crepe Poly Blend",
     "stockStatus": "In Stock",
     "offerLabel": "Cocktail Pick"
@@ -1164,8 +1522,17 @@
     "discount": 44,
     "rating": 4.3,
     "reviewsCount": 890,
-    "sizes": ["26", "28", "30", "32"],
-    "colors": ["Beige Sand", "Slate Grey", "Midnight Black"],
+    "sizes": [
+      "26",
+      "28",
+      "30",
+      "32"
+    ],
+    "colors": [
+      "Beige Sand",
+      "Slate Grey",
+      "Midnight Black"
+    ],
     "material": "Polyester Rayon Suiting Fabric",
     "stockStatus": "In Stock",
     "offerLabel": "Work to Weekend"
@@ -1186,8 +1553,18 @@
     "discount": 47,
     "rating": 4.5,
     "reviewsCount": 1210,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Cream Gold", "Rust Orange", "Teal"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Cream Gold",
+      "Rust Orange",
+      "Teal"
+    ],
     "material": "100% Soft Spun Rayon",
     "stockStatus": "In Stock",
     "offerLabel": "Festive Essential"
@@ -1208,8 +1585,14 @@
     "discount": 37,
     "rating": 4.9,
     "reviewsCount": 650,
-    "sizes": ["Free Size (6.3m)"],
-    "colors": ["Indigo Blue", "Turmeric Mustard", "Crimson"],
+    "sizes": [
+      "Free Size (6.3m)"
+    ],
+    "colors": [
+      "Indigo Blue",
+      "Turmeric Mustard",
+      "Crimson"
+    ],
     "material": "Chanderi Silk Cotton with Zari",
     "stockStatus": "In Stock",
     "offerLabel": "Handcrafted Heritage"
@@ -1230,8 +1613,18 @@
     "discount": 35,
     "rating": 4.6,
     "reviewsCount": 1490,
-    "sizes": ["XS", "S", "M", "L", "XL"],
-    "colors": ["Crisp White", "French Blue Stripe", "Pale Pink"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Crisp White",
+      "French Blue Stripe",
+      "Pale Pink"
+    ],
     "material": "100% Combed Cotton Poplin",
     "stockStatus": "In Stock",
     "offerLabel": "Workwear Classic"
@@ -1252,8 +1645,17 @@
     "discount": 35,
     "rating": 4.8,
     "reviewsCount": 490,
-    "sizes": ["8", "10", "12", "14", "16"],
-    "colors": ["Classic Camel", "Midnight Navy"],
+    "sizes": [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "colors": [
+      "Classic Camel",
+      "Midnight Navy"
+    ],
     "material": "100% Cotton with Stormwear Finish",
     "stockStatus": "In Stock",
     "offerLabel": "Premium British"
@@ -1274,8 +1676,17 @@
     "discount": 37,
     "rating": 4.5,
     "reviewsCount": 610,
-    "sizes": ["XS", "S", "M", "L"],
-    "colors": ["Champagne Gold", "Emerald Forest", "Jet Black"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Champagne Gold",
+      "Emerald Forest",
+      "Jet Black"
+    ],
     "material": "Satin Finish Polyester",
     "stockStatus": "In Stock",
     "offerLabel": "Runway Trend"
@@ -1296,8 +1707,17 @@
     "discount": 46,
     "rating": 4.6,
     "reviewsCount": 730,
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": ["Navy Blue", "Wine Red", "Olive"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Navy Blue",
+      "Wine Red",
+      "Olive"
+    ],
     "material": "Crepe Georgette",
     "stockStatus": "In Stock",
     "offerLabel": "Smart Casual"
@@ -1318,8 +1738,17 @@
     "discount": 43,
     "rating": 4.4,
     "reviewsCount": 980,
-    "sizes": ["XS", "S", "M", "L", "XL"],
-    "colors": ["Teal Multi", "Mustard Yellow"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Teal Multi",
+      "Mustard Yellow"
+    ],
     "material": "100% Pure Rayon",
     "stockStatus": "In Stock",
     "offerLabel": "Boho Vibe"
@@ -1340,13 +1769,22 @@
     "discount": 47,
     "rating": 4.5,
     "reviewsCount": 2100,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Dusty Blue", "Peach Blossom", "Mint Green"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Dusty Blue",
+      "Peach Blossom",
+      "Mint Green"
+    ],
     "material": "100% Breathable Cotton",
     "stockStatus": "In Stock",
     "offerLabel": "Office Pick"
   },
-
   {
     "id": "men-01",
     "name": "Ralph Lauren Classic Fit Oxford Cotton Shirt",
@@ -1364,8 +1802,18 @@
     "discount": 32,
     "rating": 4.9,
     "reviewsCount": 1820,
-    "sizes": ["38", "40", "42", "44", "46"],
-    "colors": ["Light Blue", "Crisp White", "Soft Pink"],
+    "sizes": [
+      "38",
+      "40",
+      "42",
+      "44",
+      "46"
+    ],
+    "colors": [
+      "Light Blue",
+      "Crisp White",
+      "Soft Pink"
+    ],
     "material": "100% Combed Long-Staple Cotton Oxford",
     "stockStatus": "In Stock",
     "offerLabel": "Timeless Luxury"
@@ -1386,8 +1834,18 @@
     "discount": 38,
     "rating": 4.8,
     "reviewsCount": 3950,
-    "sizes": ["30", "32", "34", "36", "38"],
-    "colors": ["Dark Indigo Wash", "Mid Stone Washed", "Jet Black"],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Dark Indigo Wash",
+      "Mid Stone Washed",
+      "Jet Black"
+    ],
     "material": "99% Cotton, 1% Elastane",
     "stockStatus": "In Stock",
     "offerLabel": "Bestseller"
@@ -1408,8 +1866,18 @@
     "discount": 42,
     "rating": 4.6,
     "reviewsCount": 2100,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Navy Blazer", "Bright White", "Heather Grey"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Navy Blazer",
+      "Bright White",
+      "Heather Grey"
+    ],
     "material": "100% Organic Pima Cotton",
     "stockStatus": "In Stock",
     "offerLabel": "Premium Essential"
@@ -1430,8 +1898,17 @@
     "discount": 39,
     "rating": 4.7,
     "reviewsCount": 540,
-    "sizes": ["38", "40", "42", "44"],
-    "colors": ["Natural Sand", "Sky Blue", "Navy"],
+    "sizes": [
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "colors": [
+      "Natural Sand",
+      "Sky Blue",
+      "Navy"
+    ],
     "material": "100% European Flax Linen",
     "stockStatus": "In Stock",
     "offerLabel": "Summer Tailoring"
@@ -1452,8 +1929,18 @@
     "discount": 43,
     "rating": 4.5,
     "reviewsCount": 3810,
-    "sizes": ["M", "L", "XL", "XXL"],
-    "colors": ["Burgundy Red", "Forest Green", "Royal Blue", "Black"],
+    "sizes": [
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Burgundy Red",
+      "Forest Green",
+      "Royal Blue",
+      "Black"
+    ],
     "material": "100% Combed Cotton Pique",
     "stockStatus": "In Stock",
     "offerLabel": "Hot Deal"
@@ -1474,8 +1961,17 @@
     "discount": 46,
     "rating": 4.4,
     "reviewsCount": 920,
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": ["Oatmeal Heather", "Dark Olive", "Black"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Oatmeal Heather",
+      "Dark Olive",
+      "Black"
+    ],
     "material": "80% Cotton, 20% Polyester French Terry",
     "stockStatus": "In Stock",
     "offerLabel": "Street Style"
@@ -1496,8 +1992,19 @@
     "discount": 40,
     "rating": 4.6,
     "reviewsCount": 1640,
-    "sizes": ["30", "32", "34", "36", "38", "40"],
-    "colors": ["Charcoal Grey", "Navy Blue", "Khaki Beige"],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38",
+      "40"
+    ],
+    "colors": [
+      "Charcoal Grey",
+      "Navy Blue",
+      "Khaki Beige"
+    ],
     "material": "Poly-Viscose Wool Touch Blend",
     "stockStatus": "In Stock",
     "offerLabel": "Office Pick"
@@ -1518,8 +2025,18 @@
     "discount": 47,
     "rating": 4.5,
     "reviewsCount": 2780,
-    "sizes": ["38", "39", "40", "42", "44"],
-    "colors": ["Sky Blue Micro Check", "Classic White", "Lilac"],
+    "sizes": [
+      "38",
+      "39",
+      "40",
+      "42",
+      "44"
+    ],
+    "colors": [
+      "Sky Blue Micro Check",
+      "Classic White",
+      "Lilac"
+    ],
     "material": "Cotton Rich Poly Blend",
     "stockStatus": "In Stock",
     "offerLabel": "Super Value"
@@ -1540,8 +2057,18 @@
     "discount": 32,
     "rating": 4.7,
     "reviewsCount": 1890,
-    "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Washed Moss", "Off White", "Smoky Charcoal"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Washed Moss",
+      "Off White",
+      "Smoky Charcoal"
+    ],
     "material": "Heavyweight Cotton Fleece",
     "stockStatus": "In Stock",
     "offerLabel": "Winter Warmth"
@@ -1562,8 +2089,13 @@
     "discount": 36,
     "rating": 4.8,
     "reviewsCount": 1420,
-    "sizes": ["44mm Dial"],
-    "colors": ["Blue Dial / Tan Strap", "Black Dial / Black Strap"],
+    "sizes": [
+      "44mm Dial"
+    ],
+    "colors": [
+      "Blue Dial / Tan Strap",
+      "Black Dial / Black Strap"
+    ],
     "material": "Stainless Steel Case & Genuine Calf Leather",
     "stockStatus": "In Stock",
     "offerLabel": "Gentleman's Choice"
@@ -1584,8 +2116,14 @@
     "discount": 30,
     "rating": 4.9,
     "reviewsCount": 3890,
-    "sizes": ["52mm Dial"],
-    "colors": ["Matte Black / Red", "Military Green", "All Black"],
+    "sizes": [
+      "52mm Dial"
+    ],
+    "colors": [
+      "Matte Black / Red",
+      "Military Green",
+      "All Black"
+    ],
     "material": "Carbon Core Guard & Mineral Glass",
     "stockStatus": "In Stock",
     "offerLabel": "Indestructible"
@@ -1606,8 +2144,16 @@
     "discount": 35,
     "rating": 4.9,
     "reviewsCount": 420,
-    "sizes": ["38R", "40R", "42R", "44R"],
-    "colors": ["Midnight Navy", "Charcoal Herringbone"],
+    "sizes": [
+      "38R",
+      "40R",
+      "42R",
+      "44R"
+    ],
+    "colors": [
+      "Midnight Navy",
+      "Charcoal Herringbone"
+    ],
     "material": "100% Super 120s Australian Merino Wool",
     "stockStatus": "In Stock",
     "offerLabel": "Red Carpet"
@@ -1628,8 +2174,18 @@
     "discount": 40,
     "rating": 4.5,
     "reviewsCount": 2150,
-    "sizes": ["30", "32", "34", "36", "38"],
-    "colors": ["British Khaki", "Navy", "Olive Green"],
+    "sizes": [
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "British Khaki",
+      "Navy",
+      "Olive Green"
+    ],
     "material": "98% Cotton, 2% Spandex Twill",
     "stockStatus": "In Stock",
     "offerLabel": "Smart Casual"
@@ -1650,8 +2206,16 @@
     "discount": 45,
     "rating": 4.6,
     "reviewsCount": 1740,
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": ["Medium Blue Stonewash", "Washed Black"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Medium Blue Stonewash",
+      "Washed Black"
+    ],
     "material": "100% Rigid Heavy Cotton Denim",
     "stockStatus": "In Stock",
     "offerLabel": "Biker Heritage"
@@ -1672,13 +2236,17 @@
     "discount": 36,
     "rating": 4.7,
     "reviewsCount": 2690,
-    "sizes": ["41mm Dial"],
-    "colors": ["Silver Dial / Silver Mesh", "Anthracite Grey"],
+    "sizes": [
+      "41mm Dial"
+    ],
+    "colors": [
+      "Silver Dial / Silver Mesh",
+      "Anthracite Grey"
+    ],
     "material": "Stainless Steel & Scratch Resistant Mineral Crystal",
     "stockStatus": "In Stock",
     "offerLabel": "Bestseller"
   },
-
   {
     "id": "beauty-01",
     "name": "MAC Retro Matte Lipstick - Ruby Woo",
@@ -1696,8 +2264,14 @@
     "discount": 20,
     "rating": 4.9,
     "reviewsCount": 5420,
-    "sizes": ["3g Full Size"],
-    "colors": ["Ruby Woo", "Velvet Teddy", "Chili"],
+    "sizes": [
+      "3g Full Size"
+    ],
+    "colors": [
+      "Ruby Woo",
+      "Velvet Teddy",
+      "Chili"
+    ],
     "material": "Cream-to-Matte High-Pigment Formula",
     "stockStatus": "In Stock",
     "offerLabel": "Iconic Red"
@@ -1718,8 +2292,14 @@
     "discount": 31,
     "rating": 4.6,
     "reviewsCount": 8900,
-    "sizes": ["30ml Pump"],
-    "colors": ["128 Warm Nude", "220 Natural Beige", "310 Sun Beige"],
+    "sizes": [
+      "30ml Pump"
+    ],
+    "colors": [
+      "128 Warm Nude",
+      "220 Natural Beige",
+      "310 Sun Beige"
+    ],
     "material": "Clay Enriched Oil-Control Formula with SPF 22",
     "stockStatus": "In Stock",
     "offerLabel": "Bestseller"
@@ -1740,8 +2320,13 @@
     "discount": 30,
     "rating": 4.8,
     "reviewsCount": 4200,
-    "sizes": ["30ml", "50ml"],
-    "colors": ["Crystal Clear"],
+    "sizes": [
+      "30ml",
+      "50ml"
+    ],
+    "colors": [
+      "Crystal Clear"
+    ],
     "material": "Macro + Micro Pure Hyaluronic Acid",
     "stockStatus": "In Stock",
     "offerLabel": "Plumping Hero"
@@ -1762,8 +2347,14 @@
     "discount": 30,
     "rating": 4.9,
     "reviewsCount": 1840,
-    "sizes": ["9 Pan Palette"],
-    "colors": ["Medium Nude", "Rich Nude", "Light Nude"],
+    "sizes": [
+      "9 Pan Palette"
+    ],
+    "colors": [
+      "Medium Nude",
+      "Rich Nude",
+      "Light Nude"
+    ],
     "material": "Micro-Milled Powder & Shimmer Pearls",
     "stockStatus": "In Stock",
     "offerLabel": "Cult Favorite"
@@ -1784,8 +2375,13 @@
     "discount": 20,
     "rating": 4.7,
     "reviewsCount": 7890,
-    "sizes": ["30ml Dropper", "60ml"],
-    "colors": ["Clear Liquid"],
+    "sizes": [
+      "30ml Dropper",
+      "60ml"
+    ],
+    "colors": [
+      "Clear Liquid"
+    ],
     "material": "Niacinamide Vitamin B3 & Zinc PCA",
     "stockStatus": "In Stock",
     "offerLabel": "Anti-Blemish"
@@ -1806,8 +2402,12 @@
     "discount": 20,
     "rating": 4.8,
     "reviewsCount": 980,
-    "sizes": ["130ml"],
-    "colors": ["Golden Essence"],
+    "sizes": [
+      "130ml"
+    ],
+    "colors": [
+      "Golden Essence"
+    ],
     "material": "Steam Distilled Rose & Kashmiri Saffron",
     "stockStatus": "In Stock",
     "offerLabel": "Ayurvedic Luxury"
@@ -1828,8 +2428,12 @@
     "discount": 30,
     "rating": 4.7,
     "reviewsCount": 2150,
-    "sizes": ["8.5g Standard"],
-    "colors": ["Jet Black"],
+    "sizes": [
+      "8.5g Standard"
+    ],
+    "colors": [
+      "Jet Black"
+    ],
     "material": "Smudge-Proof Long-Wear Wax Gel",
     "stockStatus": "In Stock",
     "offerLabel": "Mega Volume"
@@ -1850,8 +2454,14 @@
     "discount": 25,
     "rating": 4.5,
     "reviewsCount": 9400,
-    "sizes": ["30g Tube"],
-    "colors": ["Beige", "Bronze", "Honey"],
+    "sizes": [
+      "30g Tube"
+    ],
+    "colors": [
+      "Beige",
+      "Bronze",
+      "Honey"
+    ],
     "material": "Moisturizing Tint with Mineral Pigments",
     "stockStatus": "In Stock",
     "offerLabel": "Daily Wear"
@@ -1872,8 +2482,12 @@
     "discount": 25,
     "rating": 4.9,
     "reviewsCount": 3120,
-    "sizes": ["50ml Jar"],
-    "colors": ["Peach Translucent"],
+    "sizes": [
+      "50ml Jar"
+    ],
+    "colors": [
+      "Peach Translucent"
+    ],
     "material": "Aloe Bioferment & Hyaluronic Acid",
     "stockStatus": "In Stock",
     "offerLabel": "Hydration Master"
@@ -1894,8 +2508,12 @@
     "discount": 20,
     "rating": 4.8,
     "reviewsCount": 2430,
-    "sizes": ["200ml Spray"],
-    "colors": ["Pure Rose Water"],
+    "sizes": [
+      "200ml Spray"
+    ],
+    "colors": [
+      "Pure Rose Water"
+    ],
     "material": "100% Kannauj Rose Hydrosol",
     "stockStatus": "In Stock",
     "offerLabel": "Pure Organic"
@@ -1916,8 +2534,14 @@
     "discount": 30,
     "rating": 4.5,
     "reviewsCount": 4210,
-    "sizes": ["5ml"],
-    "colors": ["Madras Kaapi", "Bombae Nude", "Mishti Peach"],
+    "sizes": [
+      "5ml"
+    ],
+    "colors": [
+      "Madras Kaapi",
+      "Bombae Nude",
+      "Mishti Peach"
+    ],
     "material": "Transfer-Proof Enriched Liquid Wax",
     "stockStatus": "In Stock",
     "offerLabel": "Transfer-Proof"
@@ -1938,8 +2562,12 @@
     "discount": 23,
     "rating": 4.6,
     "reviewsCount": 3580,
-    "sizes": ["200ml"],
-    "colors": ["Clear"],
+    "sizes": [
+      "200ml"
+    ],
+    "colors": [
+      "Clear"
+    ],
     "material": "Green Tea & Glycolic Acid Formula",
     "stockStatus": "In Stock",
     "offerLabel": "Vegan & Clean"
@@ -1960,8 +2588,14 @@
     "discount": 25,
     "rating": 4.7,
     "reviewsCount": 1180,
-    "sizes": ["2 x 4g"],
-    "colors": ["Caramel Focus", "Honey Dew", "Almond Glow"],
+    "sizes": [
+      "2 x 4g"
+    ],
+    "colors": [
+      "Caramel Focus",
+      "Honey Dew",
+      "Almond Glow"
+    ],
     "material": "Cream-to-Powder Marula Oil Infusion",
     "stockStatus": "In Stock",
     "offerLabel": "Chisel & Glow"
@@ -1982,8 +2616,12 @@
     "discount": 13,
     "rating": 4.8,
     "reviewsCount": 6700,
-    "sizes": ["50g Tube"],
-    "colors": ["White Lotion"],
+    "sizes": [
+      "50g Tube"
+    ],
+    "colors": [
+      "White Lotion"
+    ],
     "material": "Photostable UV Filters + Niacinamide",
     "stockStatus": "In Stock",
     "offerLabel": "Zero White Cast"
@@ -2004,13 +2642,16 @@
     "discount": 25,
     "rating": 4.9,
     "reviewsCount": 4900,
-    "sizes": ["20g Tub"],
-    "colors": ["Sweet Berry"],
+    "sizes": [
+      "20g Tub"
+    ],
+    "colors": [
+      "Sweet Berry"
+    ],
     "material": "Moisture Wrap Berry Fruit Complex",
     "stockStatus": "In Stock",
     "offerLabel": "K-Beauty Viral"
   },
-
   {
     "id": "decor-01",
     "name": "ArtStreet Abstract Botanical Canvas Wall Art (Set of 3)",
@@ -2028,8 +2669,13 @@
     "discount": 52,
     "rating": 4.7,
     "reviewsCount": 1410,
-    "sizes": ["12x18 Inch each (3 Pcs)"],
-    "colors": ["Sage Green / Beige", "Monochrome Black"],
+    "sizes": [
+      "12x18 Inch each (3 Pcs)"
+    ],
+    "colors": [
+      "Sage Green / Beige",
+      "Monochrome Black"
+    ],
     "material": "Polyester Canvas with PS Wood Grain Frame",
     "stockStatus": "In Stock",
     "offerLabel": "Bestseller Wall Art"
@@ -2050,8 +2696,13 @@
     "discount": 43,
     "rating": 4.8,
     "reviewsCount": 980,
-    "sizes": ["160cm Height"],
-    "colors": ["Brushed Brass / Gold", "Matte Black"],
+    "sizes": [
+      "160cm Height"
+    ],
+    "colors": [
+      "Brushed Brass / Gold",
+      "Matte Black"
+    ],
     "material": "Electroplated Steel & White Marble Base",
     "stockStatus": "In Stock",
     "offerLabel": "Nordic Luxury"
@@ -2072,8 +2723,16 @@
     "discount": 48,
     "rating": 4.6,
     "reviewsCount": 2100,
-    "sizes": ["Door (7 Ft)", "Long Door (9 Ft)", "Window (5 Ft)"],
-    "colors": ["Natural Oat", "Slate Grey", "Olive Green"],
+    "sizes": [
+      "Door (7 Ft)",
+      "Long Door (9 Ft)",
+      "Window (5 Ft)"
+    ],
+    "colors": [
+      "Natural Oat",
+      "Slate Grey",
+      "Olive Green"
+    ],
     "material": "Heavyweight Faux Slub Linen",
     "stockStatus": "In Stock",
     "offerLabel": "Pack of 2"
@@ -2094,8 +2753,14 @@
     "discount": 52,
     "rating": 4.7,
     "reviewsCount": 1640,
-    "sizes": ["16x16 Inch"],
-    "colors": ["Royal Emerald", "Mustard Ochre", "Navy Blue"],
+    "sizes": [
+      "16x16 Inch"
+    ],
+    "colors": [
+      "Royal Emerald",
+      "Mustard Ochre",
+      "Navy Blue"
+    ],
     "material": "Ultra-Soft Dutch Velvet",
     "stockStatus": "In Stock",
     "offerLabel": "52% OFF"
@@ -2116,8 +2781,14 @@
     "discount": 46,
     "rating": 4.8,
     "reviewsCount": 870,
-    "sizes": ["8 Inch Height"],
-    "colors": ["Chalk White", "Warm Terracotta", "Charcoal"],
+    "sizes": [
+      "8 Inch Height"
+    ],
+    "colors": [
+      "Chalk White",
+      "Warm Terracotta",
+      "Charcoal"
+    ],
     "material": "Handmade Matte Ceramic",
     "stockStatus": "In Stock",
     "offerLabel": "Pinterest Trending"
@@ -2138,8 +2809,13 @@
     "discount": 42,
     "rating": 4.6,
     "reviewsCount": 920,
-    "sizes": ["24x24 Inch"],
-    "colors": ["Antique Brass", "Rose Gold"],
+    "sizes": [
+      "24x24 Inch"
+    ],
+    "colors": [
+      "Antique Brass",
+      "Rose Gold"
+    ],
     "material": "HD Silver Backed Float Glass & Forged Iron",
     "stockStatus": "In Stock",
     "offerLabel": "Statement Piece"
@@ -2160,8 +2836,12 @@
     "discount": 46,
     "rating": 4.5,
     "reviewsCount": 1130,
-    "sizes": ["28x16 Inch"],
-    "colors": ["Natural Ivory Cotton"],
+    "sizes": [
+      "28x16 Inch"
+    ],
+    "colors": [
+      "Natural Ivory Cotton"
+    ],
     "material": "100% Natural Cotton Cord & Wood",
     "stockStatus": "In Stock",
     "offerLabel": "Artisan Crafted"
@@ -2182,8 +2862,12 @@
     "discount": 46,
     "rating": 4.9,
     "reviewsCount": 780,
-    "sizes": ["9 Inch Height"],
-    "colors": ["Antique Golden & Turquoise"],
+    "sizes": [
+      "9 Inch Height"
+    ],
+    "colors": [
+      "Antique Golden & Turquoise"
+    ],
     "material": "Solid Cast Brass with Stone Work",
     "stockStatus": "In Stock",
     "offerLabel": "Vastu & Zen"
@@ -2204,8 +2888,13 @@
     "discount": 25,
     "rating": 4.7,
     "reviewsCount": 2400,
-    "sizes": ["25cm Diameter"],
-    "colors": ["Opal Frosted White", "Smoky Tinted Glass"],
+    "sizes": [
+      "25cm Diameter"
+    ],
+    "colors": [
+      "Opal Frosted White",
+      "Smoky Tinted Glass"
+    ],
     "material": "Hand-Blown Frosted Glass & Polypropylene Base",
     "stockStatus": "In Stock",
     "offerLabel": "Scandinavian Icon"
@@ -2226,8 +2915,15 @@
     "discount": 50,
     "rating": 4.6,
     "reviewsCount": 1820,
-    "sizes": ["4x6 Ft", "5x7 Ft"],
-    "colors": ["Vanilla Cream", "Silver Mist", "Teal Blue"],
+    "sizes": [
+      "4x6 Ft",
+      "5x7 Ft"
+    ],
+    "colors": [
+      "Vanilla Cream",
+      "Silver Mist",
+      "Teal Blue"
+    ],
     "material": "High-Density Chenille Microfiber",
     "stockStatus": "In Stock",
     "offerLabel": "Super Fluffy"
@@ -2248,8 +2944,13 @@
     "discount": 43,
     "rating": 4.7,
     "reviewsCount": 1390,
-    "sizes": ["500ml"],
-    "colors": ["Light Natural Wood Grain", "Dark Walnut"],
+    "sizes": [
+      "500ml"
+    ],
+    "colors": [
+      "Light Natural Wood Grain",
+      "Dark Walnut"
+    ],
     "material": "BPA-Free Polypropylene with Wood Texture",
     "stockStatus": "In Stock",
     "offerLabel": "Wellness & Spa"
@@ -2270,8 +2971,13 @@
     "discount": 38,
     "rating": 4.5,
     "reviewsCount": 670,
-    "sizes": ["6 Inch Dia"],
-    "colors": ["Teal Bird Print", "Mustard Floral"],
+    "sizes": [
+      "6 Inch Dia"
+    ],
+    "colors": [
+      "Teal Bird Print",
+      "Mustard Floral"
+    ],
     "material": "Glazed Kiln-Fired Ceramic",
     "stockStatus": "In Stock",
     "offerLabel": "Quirky Decor"
@@ -2292,8 +2998,13 @@
     "discount": 41,
     "rating": 4.8,
     "reviewsCount": 850,
-    "sizes": ["14 Inch Height"],
-    "colors": ["Earthy Multicolored", "Indigo Blue"],
+    "sizes": [
+      "14 Inch Height"
+    ],
+    "colors": [
+      "Earthy Multicolored",
+      "Indigo Blue"
+    ],
     "material": "Clay Terracotta with Cotton Fabric Shade",
     "stockStatus": "In Stock",
     "offerLabel": "Folk Craft"
@@ -2314,8 +3025,13 @@
     "discount": 50,
     "rating": 4.4,
     "reviewsCount": 1150,
-    "sizes": ["8-Photo Multi Grid"],
-    "colors": ["Matte Black", "Distressed White"],
+    "sizes": [
+      "8-Photo Multi Grid"
+    ],
+    "colors": [
+      "Matte Black",
+      "Distressed White"
+    ],
     "material": "Engineered Wood with Clear Glass",
     "stockStatus": "In Stock",
     "offerLabel": "Memory Wall"
@@ -2336,13 +3052,16 @@
     "discount": 47,
     "rating": 4.7,
     "reviewsCount": 540,
-    "sizes": ["4x4 Inch (Set of 6)"],
-    "colors": ["White Marble & Gold"],
+    "sizes": [
+      "4x4 Inch (Set of 6)"
+    ],
+    "colors": [
+      "White Marble & Gold"
+    ],
     "material": "Natural Makrana Marble with Inlaid Brass",
     "stockStatus": "In Stock",
     "offerLabel": "Dining Luxury"
   },
-
   {
     "id": "util-01",
     "name": "Prestige Deluxe Alpha Stainless Steel Pressure Cooker",
@@ -2359,8 +3078,13 @@
     "discount": 30,
     "rating": 4.8,
     "reviewsCount": 4680,
-    "sizes": ["3 Litre", "5 Litre"],
-    "colors": ["Mirror Polish Silver"],
+    "sizes": [
+      "3 Litre",
+      "5 Litre"
+    ],
+    "colors": [
+      "Mirror Polish Silver"
+    ],
     "material": "304 Food-Grade Stainless Steel & Heavy Alpha Base",
     "stockStatus": "In Stock",
     "offerLabel": "Kitchen Must-Have"
@@ -2381,8 +3105,12 @@
     "discount": 40,
     "rating": 4.7,
     "reviewsCount": 2350,
-    "sizes": ["500ml x 6 Pcs"],
-    "colors": ["Clear Glass with Wood Lid"],
+    "sizes": [
+      "500ml x 6 Pcs"
+    ],
+    "colors": [
+      "Clear Glass with Wood Lid"
+    ],
     "material": "Thermal Shock Borosilicate Glass & Acacia Wood",
     "stockStatus": "In Stock",
     "offerLabel": "Pantry Organizer"
@@ -2403,8 +3131,12 @@
     "discount": 43,
     "rating": 4.6,
     "reviewsCount": 5890,
-    "sizes": ["Full Kit with 2 Refills"],
-    "colors": ["Teal Green & Silver"],
+    "sizes": [
+      "Full Kit with 2 Refills"
+    ],
+    "colors": [
+      "Teal Green & Silver"
+    ],
     "material": "Stainless Steel Wringer & Polypropylene Bucket",
     "stockStatus": "In Stock",
     "offerLabel": "Deep Clean"
@@ -2425,8 +3157,13 @@
     "discount": 50,
     "rating": 4.5,
     "reviewsCount": 6120,
-    "sizes": ["3-Piece Set with Lid"],
-    "colors": ["Granite Red", "Granite Black"],
+    "sizes": [
+      "3-Piece Set with Lid"
+    ],
+    "colors": [
+      "Granite Red",
+      "Granite Black"
+    ],
     "material": "Forged Heavy Gauge Aluminium with PFOA-Free Coating",
     "stockStatus": "In Stock",
     "offerLabel": "Mega 50% Deal"
@@ -2447,8 +3184,14 @@
     "discount": 47,
     "rating": 4.4,
     "reviewsCount": 1820,
-    "sizes": ["3 Tier", "4 Tier"],
-    "colors": ["Soft Grey", "Ivory Cream"],
+    "sizes": [
+      "3 Tier",
+      "4 Tier"
+    ],
+    "colors": [
+      "Soft Grey",
+      "Ivory Cream"
+    ],
     "material": "Virgin High-Grade Polymer",
     "stockStatus": "In Stock",
     "offerLabel": "Space Saver"
@@ -2469,8 +3212,14 @@
     "discount": 44,
     "rating": 4.7,
     "reviewsCount": 4180,
-    "sizes": ["400W (2 Jars)"],
-    "colors": ["Champagne Red", "Glossy Black", "Royal Purple"],
+    "sizes": [
+      "400W (2 Jars)"
+    ],
+    "colors": [
+      "Champagne Red",
+      "Glossy Black",
+      "Royal Purple"
+    ],
     "material": "BPA-Free Tritan Jars & Stainless Steel Blades",
     "stockStatus": "In Stock",
     "offerLabel": "Chef's Choice"
@@ -2491,8 +3240,12 @@
     "discount": 45,
     "rating": 4.6,
     "reviewsCount": 3120,
-    "sizes": ["14-Piece Set"],
-    "colors": ["Black Handles with Pine Wood Block"],
+    "sizes": [
+      "14-Piece Set"
+    ],
+    "colors": [
+      "Black Handles with Pine Wood Block"
+    ],
     "material": "High Carbon Stainless Steel & Pine Wood",
     "stockStatus": "In Stock",
     "offerLabel": "Master Chef"
@@ -2513,8 +3266,13 @@
     "discount": 53,
     "rating": 4.4,
     "reviewsCount": 3890,
-    "sizes": ["66L Capacity (Pack of 3)"],
-    "colors": ["Navy Geometric", "Grey Linen"],
+    "sizes": [
+      "66L Capacity (Pack of 3)"
+    ],
+    "colors": [
+      "Navy Geometric",
+      "Grey Linen"
+    ],
     "material": "Breathable 120 GSM Non-Woven Fabric",
     "stockStatus": "In Stock",
     "offerLabel": "53% OFF"
@@ -2535,8 +3293,13 @@
     "discount": 50,
     "rating": 4.5,
     "reviewsCount": 4890,
-    "sizes": ["7 Eggs Capacity"],
-    "colors": ["Steel & Black", "Sunny Yellow"],
+    "sizes": [
+      "7 Eggs Capacity"
+    ],
+    "colors": [
+      "Steel & Black",
+      "Sunny Yellow"
+    ],
     "material": "Stainless Steel Heating Plate & Food Grade Cover",
     "stockStatus": "In Stock",
     "offerLabel": "Breakfast Quick"
@@ -2557,8 +3320,12 @@
     "discount": 42,
     "rating": 4.6,
     "reviewsCount": 3400,
-    "sizes": ["750W (4 Jars)"],
-    "colors": ["Grey / Turquoise"],
+    "sizes": [
+      "750W (4 Jars)"
+    ],
+    "colors": [
+      "Grey / Turquoise"
+    ],
     "material": "Shockproof ABS Body & SS 304 Jars",
     "stockStatus": "In Stock",
     "offerLabel": "Heavy Duty 750W"
@@ -2579,8 +3346,13 @@
     "discount": 47,
     "rating": 4.5,
     "reviewsCount": 1950,
-    "sizes": ["16 Jars (120ml each)"],
-    "colors": ["Classic Black", "Brown Wood Finish"],
+    "sizes": [
+      "16 Jars (120ml each)"
+    ],
+    "colors": [
+      "Classic Black",
+      "Brown Wood Finish"
+    ],
     "material": "BPA-Free Food Grade ABS",
     "stockStatus": "In Stock",
     "offerLabel": "Desi Masala Hub"
@@ -2601,8 +3373,12 @@
     "discount": 46,
     "rating": 4.7,
     "reviewsCount": 1280,
-    "sizes": ["18x12 Inch"],
-    "colors": ["Chrome Mirror Finish"],
+    "sizes": [
+      "18x12 Inch"
+    ],
+    "colors": [
+      "Chrome Mirror Finish"
+    ],
     "material": "High-Grade Stainless Steel Wire",
     "stockStatus": "In Stock",
     "offerLabel": "Heavy Load"
@@ -2623,8 +3399,13 @@
     "discount": 46,
     "rating": 4.4,
     "reviewsCount": 2100,
-    "sizes": ["Long Handle (90cm)"],
-    "colors": ["Aqua Green", "Royal Blue"],
+    "sizes": [
+      "Long Handle (90cm)"
+    ],
+    "colors": [
+      "Aqua Green",
+      "Royal Blue"
+    ],
     "material": "Aluminium Handle & Dense Bristle Head",
     "stockStatus": "In Stock",
     "offerLabel": "Smart Sweep"
@@ -2645,8 +3426,12 @@
     "discount": 29,
     "rating": 4.8,
     "reviewsCount": 3800,
-    "sizes": ["7 Litre Storage"],
-    "colors": ["Glossy White & Blue"],
+    "sizes": [
+      "7 Litre Storage"
+    ],
+    "colors": [
+      "Glossy White & Blue"
+    ],
     "material": "Non-Toxic Food Grade ABS Plastic",
     "stockStatus": "In Stock",
     "offerLabel": "Pure Health"
@@ -2667,10 +3452,917 @@
     "discount": 40,
     "rating": 4.6,
     "reviewsCount": 4210,
-    "sizes": ["Large (43cm Blade)"],
-    "colors": ["Grey / Blue"],
+    "sizes": [
+      "Large (43cm Blade)"
+    ],
+    "colors": [
+      "Grey / Blue"
+    ],
     "material": "Natural Vulcanized Rubber & Steel Pipe",
     "stockStatus": "In Stock",
     "offerLabel": "Streak-Free"
+  },
+  {
+    "id": "watch-01",
+    "name": "Rolex Submariner Date 41mm Oystersteel",
+    "brand": "Rolex",
+    "category": "Watches",
+    "subCategory": "Luxury Diving Watches",
+    "description": "The benchmark among divers' watches. Crafted from robust Oystersteel with a unidirectional rotatable Cerachrom bezel in black ceramic and luminescent Chromalight display. Powered by caliber 3235 automatic movement with 70-hour power reserve.",
+    "images": [
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1547996160-71dfabb1a7b1?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 945000,
+    "discountedPrice": 875000,
+    "discount": 7,
+    "rating": 4.95,
+    "reviewsCount": 382,
+    "sizes": [
+      "41mm Case"
+    ],
+    "colors": [
+      "Oystersteel Black",
+      "Kermit Green",
+      "Deep Blue"
+    ],
+    "material": "904L Oystersteel & High-Tech Cerachrom Ceramic",
+    "stockStatus": "In Stock",
+    "offerLabel": "Heritage Icon",
+    "views": {
+      "front": "Direct dial view showcasing cyclops date magnifier and Mercedes hands",
+      "side": "Oyster case profile with fluted screw-down crown and guard",
+      "back": "Hermetically sealed solid Oystersteel caseback",
+      "top": "Oyster bracelet with Glidelock fine-adjustment clasp"
+    }
+  },
+  {
+    "id": "watch-02",
+    "name": "Omega Speedmaster Moonwatch Professional",
+    "brand": "Omega",
+    "category": "Watches",
+    "subCategory": "Chronograph Watches",
+    "description": "The watch worn on the lunar surface. Featuring an asymmetrical 42mm stainless steel case, step dial with dot over 90 on the anodized aluminum bezel, and Co-Axial Master Chronometer Calibre 3861 manual-winding movement.",
+    "images": [
+      "https://images.unsplash.com/photo-1547996160-71dfabb1a7b1?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 685000,
+    "discountedPrice": 599000,
+    "discount": 12,
+    "rating": 4.92,
+    "reviewsCount": 512,
+    "sizes": [
+      "42mm Case"
+    ],
+    "colors": [
+      "Matte Black Dial",
+      "Sapphire Sandwich"
+    ],
+    "material": "Stainless Steel & Hesalite / Sapphire Crystal",
+    "stockStatus": "In Stock",
+    "offerLabel": "Lunar Legend",
+    "views": {
+      "front": "Matte black step dial with recessed tri-compax chronograph sub-dials",
+      "side": "Brushed and polished twisted lyre lugs with dual chrono pushers",
+      "back": "Embossed Seahorse medallion NASA flight-qualified caseback",
+      "top": "Tapered five-link stainless steel bracelet with vintage-inspired clasp"
+    }
+  },
+  {
+    "id": "watch-03",
+    "name": "TAG Heuer Carrera Chronograph Automatic 44mm",
+    "brand": "TAG Heuer",
+    "category": "Watches",
+    "subCategory": "Sport Chronograph",
+    "description": "Born on the racetrack, designed for precision performance. Encased in fine-brushed stainless steel with vibrant blue sunray dial and ceramic tachymeter bezel. Driven by the Calibre Heuer 02 automatic movement.",
+    "images": [
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1547996160-71dfabb1a7b1?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 520000,
+    "discountedPrice": 435000,
+    "discount": 16,
+    "rating": 4.88,
+    "reviewsCount": 294,
+    "sizes": [
+      "44mm Case"
+    ],
+    "colors": [
+      "Sunray Blue",
+      "Anthracite Grey",
+      "Deep Black"
+    ],
+    "material": "Fine-Brushed Steel & Fixed Ceramic Tachymeter Bezel",
+    "stockStatus": "In Stock",
+    "offerLabel": "High Velocity",
+    "views": {
+      "front": "Sunray brushed circular dial with rhodium-plated polished indices",
+      "side": "Dynamic ergonomic case profile with polished crown and chrono buttons",
+      "back": "Sapphire exhibition crystal showcasing Heuer 02 skeleton rotor",
+      "top": "H-shaped stainless steel link bracelet with safety push-buttons"
+    }
+  },
+  {
+    "id": "watch-04",
+    "name": "Cartier Santos-Dumont Large Model",
+    "brand": "Cartier",
+    "category": "Watches",
+    "subCategory": "Dress Watches",
+    "description": "An understated, architectural masterpiece of timeless horology. Features the historic square geometric case with visible bezel screws, silver sunray dial, blued-steel sword hands, and ruby/blue cabochon crown.",
+    "images": [
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 480000,
+    "discountedPrice": 425000,
+    "discount": 11,
+    "rating": 4.94,
+    "reviewsCount": 310,
+    "sizes": [
+      "Large (43.5mm x 31.4mm)"
+    ],
+    "colors": [
+      "Rose Gold & Silver Dial",
+      "Steel & Blue Dial"
+    ],
+    "material": "18K Rose Gold Bezel & Alligator Leather Strap",
+    "stockStatus": "In Stock",
+    "offerLabel": "Parisian Elegance",
+    "views": {
+      "front": "Satin-finished silver sunray dial with Roman numerals and railroad track",
+      "side": "Ultra-slim 7.3mm profile with blue synthetic spinel cabochon",
+      "back": "Engraved Alberto Santos-Dumont signature on solid caseback",
+      "top": "Hand-stitched semi-matte navy blue alligator leather band"
+    }
+  },
+  {
+    "id": "watch-05",
+    "name": "Tissot PRX Powermatic 80 Ice Blue",
+    "brand": "Tissot",
+    "category": "Watches",
+    "subCategory": "Integrated Bracelet Watches",
+    "description": "The retro-contemporary sensation with an integrated stainless steel bracelet and waffle tapisserie ice-blue dial. Equipped with the revolutionary Powermatic 80 movement offering 80 hours of autonomous reserve.",
+    "images": [
+      "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1547996160-71dfabb1a7b1?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 68000,
+    "discountedPrice": 59500,
+    "discount": 12,
+    "rating": 4.89,
+    "reviewsCount": 1420,
+    "sizes": [
+      "40mm Case",
+      "35mm Case"
+    ],
+    "colors": [
+      "Ice Blue",
+      "Glacier Green",
+      "Deep Navy"
+    ],
+    "material": "316L Stainless Steel & Scratch-Resistant Sapphire",
+    "stockStatus": "In Stock",
+    "offerLabel": "Trending Worldwide",
+    "views": {
+      "front": "Checkerboard embossed waffle dial catching ambient reflections",
+      "side": "Sharp angled tonneau case silhouette with brushed facets",
+      "back": "Transparent case back displaying Nivachron anti-magnetic balance",
+      "top": "Seamlessly integrated single-link steel bracelet with butterfly clasp"
+    }
+  },
+  {
+    "id": "jewel-01",
+    "name": "Cartier Love Bracelet 18K Yellow Gold",
+    "brand": "Cartier",
+    "category": "Jewelry",
+    "subCategory": "Fine Bangles & Bracelets",
+    "description": "An indisputable icon of everlasting romance and modern jewellery design. Created in New York in 1969, its close fitting oval shape and signature screw motifs require the included matching vermeil screwdriver to fasten.",
+    "images": [
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1611591475841-fcf2e3617be3?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 620000,
+    "discountedPrice": 565000,
+    "discount": 9,
+    "rating": 4.97,
+    "reviewsCount": 420,
+    "sizes": [
+      "Size 16",
+      "Size 17",
+      "Size 18",
+      "Size 19"
+    ],
+    "colors": [
+      "18K Yellow Gold",
+      "18K Rose Gold",
+      "18K White Gold"
+    ],
+    "material": "18K Solid Yellow Gold (750/1000)",
+    "stockStatus": "In Stock",
+    "offerLabel": "Eternal Icon",
+    "views": {
+      "front": "Mirror-polished exterior band punctuated by precision engraved screw heads",
+      "side": "Ergonomic curved oval band contour fitting natural wrist anatomy",
+      "back": "Interior engraving with hallmark authentication and serial number",
+      "top": "Precision screw closure system with specialized luxury tool"
+    }
+  },
+  {
+    "id": "jewel-02",
+    "name": "Tiffany & Co. Elsa Peretti Diamonds by the Yard Pendant",
+    "brand": "Tiffany & Co.",
+    "category": "Jewelry",
+    "subCategory": "Diamond Necklaces",
+    "description": "Revolutionary delicacy that redefined diamond jewelry. A brilliant hand-selected round diamond bezel-set in platinum on a supple 16-inch chain, designed to catch light and move with every breath.",
+    "images": [
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1611591475841-fcf2e3617be3?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 285000,
+    "discountedPrice": 249000,
+    "discount": 13,
+    "rating": 4.93,
+    "reviewsCount": 380,
+    "sizes": [
+      "16 Inch Chain",
+      "18 Inch Chain"
+    ],
+    "colors": [
+      "Platinum & Diamond",
+      "18K Gold & Diamond"
+    ],
+    "material": "950 Platinum & 0.25 Carat Round Brilliant Diamond (VVS1 / E-F)",
+    "stockStatus": "In Stock",
+    "offerLabel": "Diamond Masterpiece",
+    "views": {
+      "front": "Hand-rubbed smooth bezel cradling luminous center solitaire diamond",
+      "side": "Low-profile open culet allowing multi-angle light refraction",
+      "back": "Delicate spring-ring clasp accompanied by stamped designer plaque",
+      "top": "Featherweight cable chain drape on décolletage"
+    }
+  },
+  {
+    "id": "jewel-03",
+    "name": "Mejuri Dôme Pavé Diamond Ring in 14k Solid Gold",
+    "brand": "Mejuri",
+    "category": "Jewelry",
+    "subCategory": "Statement Rings",
+    "description": "Bold volume meets dazzling sparkle. Handcrafted in thick, recycled 14k solid gold and pavé set with over 60 conflict-free diamonds. A substantial silhouette engineered for comfortable daily luxury wear.",
+    "images": [
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1611591475841-fcf2e3617be3?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 98000,
+    "discountedPrice": 79500,
+    "discount": 19,
+    "rating": 4.86,
+    "reviewsCount": 654,
+    "sizes": [
+      "US 5",
+      "US 6",
+      "US 7",
+      "US 8",
+      "US 9"
+    ],
+    "colors": [
+      "14K Yellow Gold",
+      "14K White Gold"
+    ],
+    "material": "14k Recycled Solid Yellow Gold & Natural Conflict-Free Diamonds",
+    "stockStatus": "In Stock",
+    "offerLabel": "Curator's Choice",
+    "views": {
+      "front": "Curved dome crest blanketed in micro-pavé round brilliant diamonds",
+      "side": "Sensuous graduating solid gold tapered shank",
+      "back": "Smooth polished inner comfort band with stamped purity hallmark",
+      "top": "Aerial proportion highlighting symmetrical light reflection"
+    }
+  },
+  {
+    "id": "jewel-04",
+    "name": "Bulgari Serpenti Viper 18K Rose Gold Bracelet",
+    "brand": "Bulgari",
+    "category": "Jewelry",
+    "subCategory": "Fine Bangles & Bracelets",
+    "description": "An ultra-modern interpretation of Bulgari’s mythical serpent motif. Geometric scales crafted in 18k rose gold flex gently around the wrist, set with demi-pavé brilliant diamonds that shimmer with hypnotic elegance.",
+    "images": [
+      "https://images.unsplash.com/photo-1611591475841-fcf2e3617be3?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 890000,
+    "discountedPrice": 799000,
+    "discount": 10,
+    "rating": 4.96,
+    "reviewsCount": 184,
+    "sizes": [
+      "Small (15cm)",
+      "Medium (17cm)",
+      "Large (19cm)"
+    ],
+    "colors": [
+      "18K Rose Gold",
+      "18K White Gold"
+    ],
+    "material": "18k Rose Gold with Pavé Diamonds (0.47 ct)",
+    "stockStatus": "In Stock",
+    "offerLabel": "High Jewelry",
+    "views": {
+      "front": "Articulated snake scale modules coiling with sensual fluid tension",
+      "side": "Geometric tapering structure featuring hand-set diamond trapezoids",
+      "back": "Inner spring mechanism allowing effortless slip-on flexibility",
+      "top": "Sculptural snakehead stylized finish with high-polish gleam"
+    }
+  },
+  {
+    "id": "jewel-05",
+    "name": "Van Cleef & Arpels Vintage Alhambra Necklace",
+    "brand": "Van Cleef & Arpels",
+    "category": "Jewelry",
+    "subCategory": "Luxury Pendants",
+    "description": "Faithful to the very first Alhambra jewel created in 1968, this iconic talisman represents fortune, health, and love. Featuring a luminous natural white mother-of-pearl clover framed by golden beaded contouring.",
+    "images": [
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 340000,
+    "discountedPrice": 299000,
+    "discount": 12,
+    "rating": 4.95,
+    "reviewsCount": 390,
+    "sizes": [
+      "Standard Pendant (15mm motif)"
+    ],
+    "colors": [
+      "White Mother-of-Pearl",
+      "Onyx Black",
+      "Carnelian Red",
+      "Malachite Green"
+    ],
+    "material": "18k Yellow Gold & Natural Iridescent Mother-of-Pearl",
+    "stockStatus": "In Stock",
+    "offerLabel": "Good Luck Talisman",
+    "views": {
+      "front": "Four-leaf clover motif with iridescent nacre sheen framed by beads",
+      "side": "Precision golden bezel housing protective gemstone borders",
+      "back": "Hallmarked yellow gold clasp with secondary adjustable jump-ring",
+      "top": "Radiant golden link drape complementing day and evening attire"
+    }
+  },
+  {
+    "id": "frag-01",
+    "name": "Tom Ford Tobacco Vanille Eau De Parfum 100ml",
+    "brand": "Tom Ford",
+    "category": "Fragrances",
+    "subCategory": "Unisex Haute Parfumerie",
+    "description": "Opulent, warm, and iconic. Reminiscent of an English gentlemen’s club. Infused with rich vanilla, spicy tobacco leaf, cacao, dry fruit accords, and sweet wood sap for a luxurious, deeply intoxicating modern impression.",
+    "images": [
+      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 38000,
+    "discountedPrice": 31900,
+    "discount": 16,
+    "rating": 4.91,
+    "reviewsCount": 1840,
+    "sizes": [
+      "50ml",
+      "100ml"
+    ],
+    "colors": [
+      "Dark Amber Flacon"
+    ],
+    "material": "Natural Essential Oils, Madagascar Vanilla & Tonka Bean",
+    "stockStatus": "In Stock",
+    "offerLabel": "Scent of the Year",
+    "views": {
+      "front": "Architectural chess-piece dark flacon with gold-embossed plaque",
+      "side": "Substantial weighted glass profile highlighting amber juice opacity",
+      "back": "Clean faceted glass silhouette with batch code engraving",
+      "top": "Signature grooved weighted cap with TF luxury monogram"
+    }
+  },
+  {
+    "id": "frag-02",
+    "name": "Creed Aventus Millesime Handcrafted EDP 100ml",
+    "brand": "Creed",
+    "category": "Fragrances",
+    "subCategory": "Niche Luxury Perfumes",
+    "description": "The bestselling fragrance in the history of The House of Creed. Celebrates strength, power, and success. Opens with crisp Italian bergamot, blackcurrant, and pineapple, leading into birch, patchouli, ambergris, and oakmoss.",
+    "images": [
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 42000,
+    "discountedPrice": 34500,
+    "discount": 18,
+    "rating": 4.94,
+    "reviewsCount": 2210,
+    "sizes": [
+      "100ml",
+      "50ml"
+    ],
+    "colors": [
+      "Silver & Leather Wrap"
+    ],
+    "material": "Hand-Infused French Perfumery Oils & Ambergris Essence",
+    "stockStatus": "In Stock",
+    "offerLabel": "King of Scents",
+    "views": {
+      "front": "Silver and black equestrian emblem embossed over heavy flacon",
+      "side": "Textured faux-leather wrapped waist for ergonomic grip",
+      "back": "Clear French crystal revealing pale golden concentrated perfume",
+      "top": "Crowned Creed royal crest atomizing cap"
+    }
+  },
+  {
+    "id": "frag-03",
+    "name": "Dior Sauvage Elixir Concentrated Parfum 60ml",
+    "brand": "Dior",
+    "category": "Fragrances",
+    "subCategory": "Intense Men's Parfum",
+    "description": "An extraordinarily concentrated fragrance steeped in the iconic Sauvage freshness with an intoxicating heart of spices, a custom-crafted lavender essence, and a blend of rich woods forming a powerful, noble sillage.",
+    "images": [
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 22000,
+    "discountedPrice": 17999,
+    "discount": 18,
+    "rating": 4.88,
+    "reviewsCount": 1650,
+    "sizes": [
+      "60ml",
+      "100ml"
+    ],
+    "colors": [
+      "Midnight Blue Lacquer"
+    ],
+    "material": "Concentrated Parfum Elixir with Bleus des Alpes Lavender",
+    "stockStatus": "In Stock",
+    "offerLabel": "Master Perfumer",
+    "views": {
+      "front": "Midnight blue lacquered glass with silver engraved Sauvage cartouche",
+      "side": "Heavy curved glass pedestal conveying solid presence",
+      "back": "Opaque protective finish shielding delicate aromatics from light",
+      "top": "Magnetic signature grooved cap with Christian Dior logo"
+    }
+  },
+  {
+    "id": "frag-04",
+    "name": "Maison Margiela REPLICA Jazz Club 100ml",
+    "brand": "Maison Margiela",
+    "category": "Fragrances",
+    "subCategory": "Atmospheric Unisex EDT",
+    "description": "Brooklyn, 2013. The scent of cocktails and cigars in a private jazz club. Warm rum absolu, tobacco leaf, pink pepper, and vanilla bean notes recreate the vibrant ambiance of saxophones and deep leather armchairs.",
+    "images": [
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 18500,
+    "discountedPrice": 14900,
+    "discount": 19,
+    "rating": 4.85,
+    "reviewsCount": 940,
+    "sizes": [
+      "100ml",
+      "30ml"
+    ],
+    "colors": [
+      "Honey Amber Liquid"
+    ],
+    "material": "Pure Apothecary Glass & Natural Cotton Fabric Label",
+    "stockStatus": "In Stock",
+    "offerLabel": "Sensory Memory",
+    "views": {
+      "front": "Classic apothecary bottle silhouette with typed 100% cotton fabric label",
+      "side": "Warm amber liquor reflection glowing through transparent glass",
+      "back": "Minimalist Parisian design devoid of unnecessary packaging",
+      "top": "Rope-wrapped metallic pump atomizer for tactile spraying"
+    }
+  },
+  {
+    "id": "frag-05",
+    "name": "Chanel Bleu De Chanel Parfum Vaporisateur 100ml",
+    "brand": "Chanel",
+    "category": "Fragrances",
+    "subCategory": "Signature Luxury Parfum",
+    "description": "An ode to masculine freedom expressed in an aromatic-woody fragrance with a captivating trail. Sandalwood from New Caledonia and rich cedar notes intertwine with fresh citrus zest for unmatched sophistication.",
+    "images": [
+      "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 21500,
+    "discountedPrice": 18200,
+    "discount": 15,
+    "rating": 4.9,
+    "reviewsCount": 2890,
+    "sizes": [
+      "100ml",
+      "50ml"
+    ],
+    "colors": [
+      "Deep Navy Monolith"
+    ],
+    "material": "Deep Navy Monolithic Glass with Gold Foil Inscription",
+    "stockStatus": "In Stock",
+    "offerLabel": "Classic Perfection",
+    "views": {
+      "front": "Deep monolithic navy flacon with gold lettered Parfum typography",
+      "side": "Clean sharp geometric edges with hand-polished facets",
+      "back": "Sleek continuous back plate evoking quiet luxury",
+      "top": "Magnetic interlocking double-C emblem cap automatically aligning"
+    }
+  },
+  {
+    "id": "eye-01",
+    "name": "Ray-Ban Classic Polarized Aviator Gold",
+    "brand": "Ray-Ban",
+    "category": "Eyewear",
+    "subCategory": "Pilot Sunglasses",
+    "description": "Originally designed in 1937 for US aviators, the legendary teardrop shape combines classic styling with exceptional quality and 100% UV protection through iconic crystal green G-15 polarized lenses.",
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 15990,
+    "discountedPrice": 11990,
+    "discount": 25,
+    "rating": 4.87,
+    "reviewsCount": 3120,
+    "sizes": [
+      "Standard 58mm",
+      "Large 62mm"
+    ],
+    "colors": [
+      "Polished Gold / G-15 Green",
+      "Gunmetal / Polarized Grey",
+      "Black / Blue Gradient"
+    ],
+    "material": "Lightweight Monel Metal & Crystal Polarized Glass",
+    "stockStatus": "In Stock",
+    "offerLabel": "Global Bestseller",
+    "views": {
+      "front": "Double bridge brow bar with iconic green G-15 polarized teardrop lenses",
+      "side": "Slim linear temple arms with ergonomic acetate paddle tips",
+      "back": "Silicone adjustable nose pads with RB logo micro-etching",
+      "top": "Overhead view highlighting hinge alignment and curve"
+    }
+  },
+  {
+    "id": "eye-02",
+    "name": "Oliver Peoples Gregory Peck Acetate Sunglasses",
+    "brand": "Oliver Peoples",
+    "category": "Eyewear",
+    "subCategory": "Retro Acetate Frames",
+    "description": "Inspired by the signature frames worn by Gregory Peck in To Kill a Mockingbird. Crafted in bespoke Havana acetate with keyhole bridge and custom tinted mineral glass lenses for vintage intellectual refinement.",
+    "images": [
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 38000,
+    "discountedPrice": 29900,
+    "discount": 21,
+    "rating": 4.92,
+    "reviewsCount": 410,
+    "sizes": [
+      "47mm Frame",
+      "50mm Frame"
+    ],
+    "colors": [
+      "Raintree Tortoise",
+      "Buff & Indigo",
+      "Black Diamond"
+    ],
+    "material": "Handcrafted Italian Mazzucchelli Acetate & Mineral Glass",
+    "stockStatus": "In Stock",
+    "offerLabel": "Hollywood Heritage",
+    "views": {
+      "front": "Signature keyhole bridge and rounded frame front with dual pin accents",
+      "side": "Hand-inlaid filigree wire core running through translucent temple arms",
+      "back": "Comfort molded nose bridge for balanced weight distribution",
+      "top": "Hand-finished beveling across brow and temples"
+    }
+  },
+  {
+    "id": "eye-03",
+    "name": "Gucci Geometric Oversized Gold Sunglasses",
+    "brand": "Gucci",
+    "category": "Eyewear",
+    "subCategory": "Statement Luxury Shades",
+    "description": "Glamour re-imagined. Distinctive octagonal oversized gold-toned metal rims with warm amber gradient lenses. Subtle interlocking G filigree on the temples brings runway chic to any ensemble.",
+    "images": [
+      "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 42000,
+    "discountedPrice": 33500,
+    "discount": 20,
+    "rating": 4.89,
+    "reviewsCount": 298,
+    "sizes": [
+      "Oversized 60mm"
+    ],
+    "colors": [
+      "Yellow Gold / Warm Amber",
+      "Rose Gold / Smoke Grey"
+    ],
+    "material": "High-Gloss Hypoallergenic Japanese Titanium & Polycarbonate",
+    "stockStatus": "In Stock",
+    "offerLabel": "Runway Spotlight",
+    "views": {
+      "front": "Striking octagonal metal geometry with warm sunset gradient lenses",
+      "side": "Interlocking GG monogram medallion embedded on ultra-thin temples",
+      "back": "Pearlized cushioned nose pads for featherlight all-day comfort",
+      "top": "Slim profile displaying Italian precision metal soldering"
+    }
+  },
+  {
+    "id": "eye-04",
+    "name": "Prada Symbole Angular Black Sunglasses",
+    "brand": "Prada",
+    "category": "Eyewear",
+    "subCategory": "Avant-Garde Designer Shades",
+    "description": "An unmistakable contemporary icon. Bold three-dimensional geometric temples featuring the iconic Prada enamel triangle logo on both sides, paired with high-clarity category 3 dark grey lenses.",
+    "images": [
+      "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 46000,
+    "discountedPrice": 38900,
+    "discount": 15,
+    "rating": 4.93,
+    "reviewsCount": 520,
+    "sizes": [
+      "52mm Lens Width"
+    ],
+    "colors": [
+      "Glossy Piano Black",
+      "Tortoiseshell Havana",
+      "Chalk White"
+    ],
+    "material": "Multi-Faceted Premium Recycled Acetate",
+    "stockStatus": "In Stock",
+    "offerLabel": "Celebrity Must-Have",
+    "views": {
+      "front": "Chiseled rectangular cat-eye hybrid front contour with dark tint",
+      "side": "Faceted sculptural temple arm bearing contrast Prada triangle plaque",
+      "back": "Precision barrel hinges with engraved serial verification",
+      "top": "Substantial acetate thickness catching sharp angular shadows"
+    }
+  },
+  {
+    "id": "eye-05",
+    "name": "Tom Ford Snowdon Polarized Wayfarer",
+    "brand": "Tom Ford",
+    "category": "Eyewear",
+    "subCategory": "Classic Luxury Sunglasses",
+    "description": "The quintessential gentleman's frames as seen in classic cinema. Substantial glossy acetate construction with the signature inlaid rose gold metal 'T' temple decoration and anti-reflective polarized lenses.",
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1508296695146-257a814070b4?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 39500,
+    "discountedPrice": 31500,
+    "discount": 20,
+    "rating": 4.9,
+    "reviewsCount": 670,
+    "sizes": [
+      "50mm Frame",
+      "53mm Frame"
+    ],
+    "colors": [
+      "Shiny Dark Havana",
+      "Gloss Black"
+    ],
+    "material": "Hand-Carved Italian Block Acetate & Polarized CR-39",
+    "stockStatus": "In Stock",
+    "offerLabel": "Cinematic Legend",
+    "views": {
+      "front": "Structured thick wayfarer brow line framing eyes with masculine power",
+      "side": "Iconic metal 'T' hardware wrapping from frame front through temple hinge",
+      "back": "Laser-etched Tom Ford logo on upper left lens perimeter",
+      "top": "Ergonomic bridge contour engineered for all-day zero-slip stability"
+    }
+  },
+  {
+    "id": "elec-01",
+    "name": "Sony WH-1000XM5 Noise Canceling Headphones",
+    "brand": "Sony",
+    "category": "Electronics",
+    "subCategory": "Wireless High-Res Headphones",
+    "description": "Industry-leading noise cancellation rewritten with two processors and eight microphones. Features precision engineered 30mm carbon fiber driver unit, LDAC lossless streaming, 30-hour battery life, and ultra-soft fit leather.",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 34990,
+    "discountedPrice": 28990,
+    "discount": 17,
+    "rating": 4.92,
+    "reviewsCount": 4890,
+    "sizes": [
+      "Over-Ear Universal"
+    ],
+    "colors": [
+      "Platinum Silver",
+      "Midnight Black",
+      "Smoky Pink"
+    ],
+    "material": "Soft-Fit Synthetic Leather & Lightweight Recycled ABS",
+    "stockStatus": "In Stock",
+    "offerLabel": "#1 Sound Isolation",
+    "views": {
+      "front": "Seamless stepless headband design with clean unified acoustic earcups",
+      "side": "Capacitive touch gesture surface on right earcup for volume & skips",
+      "back": "Memory foam ear cushions distributing pressure evenly around ears",
+      "top": "Collapsible magnetic travel case with integrated cable compartment"
+    }
+  },
+  {
+    "id": "elec-02",
+    "name": "Bang & Olufsen Beoplay EX Wireless ANC Earbuds",
+    "brand": "Bang & Olufsen",
+    "category": "Electronics",
+    "subCategory": "Luxury True Wireless Earbuds",
+    "description": "A jewel of acoustic mastery. Waterproof aluminum and mirrored glass construction housing 9.2mm neodymium drivers for expansive, soul-stirring high fidelity. Active Noise Cancellation with transparency mode.",
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 42000,
+    "discountedPrice": 35900,
+    "discount": 15,
+    "rating": 4.89,
+    "reviewsCount": 820,
+    "sizes": [
+      "In-Ear (4 Silicone Tip Sizes Included)"
+    ],
+    "colors": [
+      "Anthracite Oxygen",
+      "Gold Tone",
+      "Black Anthracite"
+    ],
+    "material": "Anodized Aluminum, Polymer & Mirrored Tempered Glass",
+    "stockStatus": "In Stock",
+    "offerLabel": "Audiophile Jewel",
+    "views": {
+      "front": "Circular glass touch interface ringed in precision machined aluminum",
+      "side": "Ergonomic stem profile housing beamforming microphone array",
+      "back": "Compact aluminum charging case with fast USB-C and Qi wireless charging",
+      "top": "IP57 certified dust and waterproof interior acoustic seals"
+    }
+  },
+  {
+    "id": "elec-03",
+    "name": "Marshall Stanmore III Bluetooth Home Speaker",
+    "brand": "Marshall",
+    "category": "Electronics",
+    "subCategory": "High-Fidelity Home Audio",
+    "description": "The legendary centerpiece of home sound. Re-engineered with an even wider soundstage than its predecessor, delivering immersive Marshall signature sound with outward angled tweeters and new waveguides.",
+    "images": [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 41999,
+    "discountedPrice": 36999,
+    "discount": 12,
+    "rating": 4.93,
+    "reviewsCount": 1950,
+    "sizes": [
+      "Home Mid-Size (350 x 203 x 188 mm)"
+    ],
+    "colors": [
+      "Vintage Black",
+      "Classic Cream",
+      "Dark Brown"
+    ],
+    "material": "Textured Vinyl Casing, Brass Control Knobs & Salt & Pepper Fret",
+    "stockStatus": "In Stock",
+    "offerLabel": "Rock & Roll Icon",
+    "views": {
+      "front": "Iconic script Marshall emblem over vintage-woven acoustic grille cloth",
+      "side": "Leather-grained PVC wrap with solid acoustic wood resonance cabinet",
+      "back": "Bass-reflex port with RCA and 3.5mm analog input terminals",
+      "top": "Brushed brass top plate featuring analog bass, treble, and volume dials"
+    }
+  },
+  {
+    "id": "elec-04",
+    "name": "Apple AirPods Max Space Black (USB-C)",
+    "brand": "Apple",
+    "category": "Electronics",
+    "subCategory": "Lossless Audio Over-Ear",
+    "description": "A completely reimagined over-ear experience. From canopy to cushions, designed for an uncompromising acoustic seal. Powered by Apple H1 chips with Personalized Spatial Audio, Pro-level Active Noise Cancellation, and lossless audio support.",
+    "images": [
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 59900,
+    "discountedPrice": 53900,
+    "discount": 10,
+    "rating": 4.9,
+    "reviewsCount": 3100,
+    "sizes": [
+      "Over-Ear Universal"
+    ],
+    "colors": [
+      "Space Black",
+      "Starlight",
+      "Midnight Blue",
+      "Silver"
+    ],
+    "material": "Anodized Aluminum Earcups, Breathable Knit Mesh & Memory Foam",
+    "stockStatus": "In Stock",
+    "offerLabel": "Spatial Symphony",
+    "views": {
+      "front": "Seamless bead-blasted anodized aluminum cups pivoting independently",
+      "side": "Digital Crown inspired by Apple Watch for precision haptic volume control",
+      "back": "Acoustically engineered memory foam pads with magnetic detachment",
+      "top": "Breathable knit mesh canopy distributing weight to reduce on-head pressure"
+    }
+  },
+  {
+    "id": "elec-05",
+    "name": "Leica D-Lux 7 Compact Digital Camera",
+    "brand": "Leica",
+    "category": "Electronics",
+    "subCategory": "Luxury Photography",
+    "description": "German engineering in a pocket-sized powerhouse. Features a large 17-megapixel Four Thirds sensor paired with a fast Leica DC Vario-Summilux 24-75mm f/1.7-2.8 ASPH lens, 4K video recording, and classic tactile manual controls.",
+    "images": [
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=700&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=700&auto=format&fit=crop&q=80"
+    ],
+    "originalPrice": 145000,
+    "discountedPrice": 129000,
+    "discount": 11,
+    "rating": 4.94,
+    "reviewsCount": 320,
+    "sizes": [
+      "Compact Body"
+    ],
+    "colors": [
+      "Classic Silver & Black",
+      "All Black"
+    ],
+    "material": "Solid Magnesium-Alloy Die-Cast Body with Textured Leatherette",
+    "stockStatus": "In Stock",
+    "offerLabel": "Pure Optical Art",
+    "views": {
+      "front": "Legendary Leica red dot insignia beside high-aperture Summilux lens",
+      "side": "Analog shutter speed and exposure compensation brass dial dials",
+      "back": "High-resolution 2.76 million dot EVF and 3-inch touchscreen LCD",
+      "top": "Manual aspect ratio selector switch directly mounted around lens barrel"
+    }
   }
 ]

@@ -21,7 +21,9 @@ export default function ProductDetailModal({
   onClose,
   onAddToCart,
   onBuyNow,
-  onToggleWishlist
+  onToggleWishlist,
+  currentUser,
+  onOpenAuth
 }) {
   if (!product) return null;
 
@@ -35,6 +37,7 @@ export default function ProductDetailModal({
 
   const modalRef = useRef(null);
   const contentRef = useRef(null);
+  const reviewsRef = useRef(null);
 
   const images = product.images && product.images.length > 0
     ? product.images
@@ -171,12 +174,21 @@ export default function ProductDetailModal({
 
             {/* Rating & Stock */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '20px' }}>
-              <div className="rating-badge">
+              <div
+                className="rating-badge"
+                style={{ cursor: 'pointer' }}
+                onClick={() => reviewsRef.current?.scrollIntoView({ behavior: 'smooth' })}
+                title="Jump to reviews"
+              >
                 <Star size={14} fill="#fbbf24" />
                 <span>{product.rating}</span>
               </div>
-              <span style={{ fontSize: '0.85rem', color: '#94a3b8' }}>
-                {product.reviewsCount || 1200} Verified Customer Reviews
+              <span
+                style={{ fontSize: '0.85rem', color: '#818cf8', cursor: 'pointer', textDecoration: 'underline', textUnderlineOffset: '3px' }}
+                onClick={() => reviewsRef.current?.scrollIntoView({ behavior: 'smooth' })}
+                title="Read verified customer reviews"
+              >
+                {product.reviewsCount || 1200} Verified Customer Reviews ↓
               </span>
               <span style={{ fontSize: '0.78rem', background: 'rgba(16, 185, 129, 0.15)', color: '#34d399', padding: '3px 8px', borderRadius: '6px', fontWeight: '700' }}>
                 {product.stockStatus || 'In Stock'}
@@ -331,6 +343,15 @@ export default function ProductDetailModal({
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Dedicated Verified Reviews & Ratings Section */}
+        <div ref={reviewsRef} style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
+          <ReviewsSection
+            product={product}
+            currentUser={currentUser}
+            onOpenAuth={onOpenAuth}
+          />
         </div>
       </div>
     </div>
