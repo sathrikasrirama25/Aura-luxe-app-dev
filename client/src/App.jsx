@@ -44,7 +44,82 @@ export default function App() {
   // Cart & Wishlist state
   const [cart, setCart] = useState([]);
   const [wishlistIds, setWishlistIds] = useState(['shoe-01', 'women-01', 'men-01', 'beauty-01']);
-  const [orders, setOrders] = useState([]);
+  const [orders, setOrders] = useState(() => {
+    try {
+      const saved = localStorage.getItem('auraluxe_orders');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch (e) {}
+
+    // Default luxury sample orders to allow immediate cancellation testing
+    return [
+      {
+        orderId: 'LXC-748921',
+        items: [
+          {
+            name: 'Rolex Submariner Date 41mm',
+            brand: 'Rolex',
+            price: 875000,
+            quantity: 1,
+            size: '41mm',
+            color: 'Cerachrom Black',
+            image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=300&auto=format&fit=crop&q=80'
+          }
+        ],
+        totalAmount: 875000,
+        orderStatus: 'In Transit',
+        carrier: 'BlueDart Apex Express',
+        awbNumber: 'BD-982341094-IN',
+        estimatedDelivery: 'Tomorrow by 4:00 PM',
+        orderDate: '2026-10-12T14:30:00.000Z',
+        paymentMethod: 'UPI (Google Pay)',
+        address: {
+          name: 'Alex Mercer',
+          doorNo: 'Villa 7',
+          street: 'Palm Meadows, Whitefield',
+          city: 'Bengaluru',
+          pinCode: '560066'
+        }
+      },
+      {
+        orderId: 'LXC-612944',
+        items: [
+          {
+            name: 'Dior Sauvage Elixir Parfum',
+            brand: 'Dior',
+            price: 18500,
+            quantity: 1,
+            size: '100ml',
+            image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=300&auto=format&fit=crop&q=80'
+          },
+          {
+            name: 'Air Jordan 1 Retro High OG',
+            brand: 'Nike',
+            price: 16995,
+            quantity: 1,
+            size: 'UK 9',
+            image: 'https://images.unsplash.com/photo-1552346154-21d32810aba3?w=300&auto=format&fit=crop&q=80'
+          }
+        ],
+        totalAmount: 35495,
+        orderStatus: 'Processing',
+        carrier: 'Delhivery Luxury Cargo',
+        awbNumber: 'DL-448102941-IN',
+        estimatedDelivery: '16 Oct 2026',
+        orderDate: '2026-10-14T09:15:00.000Z',
+        paymentMethod: 'Credit Card (•••• 4242)',
+        address: {
+          name: 'Alex Mercer',
+          doorNo: 'Villa 7',
+          street: 'Palm Meadows, Whitefield',
+          city: 'Bengaluru',
+          pinCode: '560066'
+        }
+      }
+    ];
+  });
   const [savedUser, setSavedUser] = useState(null);
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
     try {
@@ -419,12 +494,57 @@ export default function App() {
     setIsCheckoutOpen(true);
   };
 
+  // Sync orders to localStorage
+  useEffect(() => {
+    try {
+      localStorage.setItem('auraluxe_orders', JSON.stringify(orders));
+    } catch (e) {}
+  }, [orders]);
+
   // Order Placement
   const handleOrderPlaced = (newOrder) => {
-    setOrders((prev) => [newOrder, ...prev]);
+    const formattedOrder = {
+      ...newOrder,
+      orderStatus: newOrder.orderStatus || 'Processing',
+      carrier: newOrder.carrier || 'BlueDart Apex Express',
+      awbNumber: newOrder.awbNumber || `BD-${Math.floor(100000000 + Math.random() * 900000000)}-IN`,
+      estimatedDelivery: newOrder.estimatedDelivery || 'In 2-3 Business Days'
+    };
+    setOrders((prev) => [formattedOrder, ...prev]);
     setCart([]);
     setAppliedCoupon(null);
     addToast(`Order #${newOrder.orderId} placed successfully!`, 'success');
+  };
+
+  // Order Cancellation Handler
+  const handleCancelOrder = async (orderId, reason) => {
+    const cancelledAt = new Date().toISOString();
+
+    setOrders((prev) =>
+      prev.map((ord) => {
+        if (ord.orderId === orderId) {
+          return {
+            ...ord,
+            orderStatus: 'Cancelled',
+            cancelledAt,
+            cancellationReason: reason
+          };
+        }
+        return ord;
+      })
+    );
+
+    try {
+      await fetch(`/api/orders/${orderId}/cancel`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ reason, cancelledAt })
+      });
+    } catch (e) {
+      // Offline / GitHub Pages fallback
+    }
+
+    addToast(`Order #${orderId} has been cancelled. 100% full refund initiated!`, 'info');
   };
 
   // Brand Name Selection
@@ -648,10 +768,16 @@ export default function App() {
         isOpen={isOrdersOpen}
         onClose={() => setIsOrdersOpen(false)}
         orders={orders}
+        onCancelOrder={handleCancelOrder}
+        onTrackOrder={(order) => {
+          setIsOrdersOpen(false);
+          handleOpenHelp('track');
+        }}
         onReorder={(order) => {
           (order.items || []).forEach((item) => handleAddToCart(item));
           setIsOrdersOpen(false);
           setIsCartOpen(true);
+          addToast(`Items from Order #${order.orderId} added to Bag!`, 'success');
         }}
       />
 
@@ -696,6 +822,11 @@ export default function App() {
         onClose={() => setIsHelpOpen(false)}
         initialTab={helpInitialTab}
         orders={orders}
+        onCancelOrder={handleCancelOrder}
+        onOpenOrders={() => {
+          setIsHelpOpen(false);
+          setIsOrdersOpen(true);
+        }}
       />
 
       {/* Toast Notification Stack */}

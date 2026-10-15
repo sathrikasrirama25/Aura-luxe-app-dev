@@ -16,11 +16,18 @@ import {
   Clock,
   MapPin,
   CheckCircle2,
-  Package
+  Package,
+  XCircle,
+  Ban
 } from 'lucide-react';
 import gsap from 'gsap';
 
 const FAQ_DATA = [
+  {
+    category: 'Orders & Tracking',
+    question: 'Can I cancel my order? What is the cancellation policy?',
+    answer: 'Yes! Aura Luxe offers instant, hassle-free order cancellation with a 100% FULL REFUND policy anytime before delivery. Simply open "My Orders" from the header, click "Cancel Order", and select a reason. The full purchase amount is immediately refunded back to your original payment method (or UPI account) with zero deduction.'
+  },
   {
     category: 'Orders & Tracking',
     question: 'How do I track my order status in real time?',
@@ -53,7 +60,14 @@ const FAQ_DATA = [
   }
 ];
 
-export default function HelpModal({ isOpen, onClose, initialTab = 'track', orders = [] }) {
+export default function HelpModal({
+  isOpen,
+  onClose,
+  initialTab = 'track',
+  orders = [],
+  onCancelOrder,
+  onOpenOrders
+}) {
   if (!isOpen) return null;
 
   const [activeTab, setActiveTab] = useState(initialTab);
@@ -175,7 +189,9 @@ export default function HelpModal({ isOpen, onClose, initialTab = 'track', order
       let replyText = 'Thank you for reaching out! Our concierge team is standing by to assist with custom requests, sizing inquiries, and order priority.';
 
       const lower = textToSend.toLowerCase();
-      if (lower.includes('track') || lower.includes('where is my order')) {
+      if (lower.includes('cancel')) {
+        replyText = 'You can cancel any unfulfilled order with an instant 100% full refund! Go to "My Orders" from the header, select "Cancel Order", and confirm your reason. Your full refund is credited back to your original payment method immediately.';
+      } else if (lower.includes('track') || lower.includes('where is my order')) {
         replyText = `You can view live delivery milestones directly in the "Track Order" tab above! Enter your order number like ${trackingId} for GPS tracking.`;
       } else if (lower.includes('return') || lower.includes('refund')) {
         replyText = 'We provide a 7-day doorstep return policy! Simply open your Orders tab or request a pickup, and our courier will inspect and collect the package with instant refund dispatch.';
@@ -316,38 +332,66 @@ export default function HelpModal({ isOpen, onClose, initialTab = 'track', order
                   </div>
                 </div>
 
-                {/* Stepper Timeline */}
-                <div className="track-stepper-container">
-                  <div className="stepper-step completed">
-                    <div className="step-circle"><CheckCircle2 size={16} /></div>
-                    <div className="step-label">Order Placed</div>
-                    <div className="step-sub">{searchedOrder.orderDate || 'Oct 12'}</div>
+                {/* Stepper Timeline or Cancellation Banner */}
+                {(searchedOrder.orderStatus || '').toLowerCase().includes('cancelled') ? (
+                  <div
+                    style={{
+                      background: 'rgba(239, 68, 68, 0.1)',
+                      border: '1px solid rgba(239, 68, 68, 0.35)',
+                      borderRadius: '12px',
+                      padding: '16px',
+                      margin: '18px 0',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '14px'
+                    }}
+                  >
+                    <XCircle size={28} color="#f87171" style={{ flexShrink: 0 }} />
+                    <div>
+                      <h5 style={{ color: '#f87171', margin: '0 0 4px', fontSize: '1rem', fontWeight: '800' }}>
+                        Order #{searchedOrder.orderId} Has Been Cancelled
+                      </h5>
+                      <p style={{ margin: 0, fontSize: '0.84rem', color: '#fca5a5' }}>
+                        <strong>Reason:</strong> {searchedOrder.cancellationReason || 'Customer requested order cancellation'}
+                      </p>
+                      <p style={{ margin: '4px 0 0', fontSize: '0.82rem', color: '#34d399', fontWeight: '700' }}>
+                        ✓ 100% Full Refund initiated. Expected back in your account in 24-48 hours.
+                      </p>
+                    </div>
                   </div>
+                ) : (
+                  <div className="track-stepper-container">
+                    <div className="stepper-step completed">
+                      <div className="step-circle"><CheckCircle2 size={16} /></div>
+                      <div className="step-label">Order Placed</div>
+                      <div className="step-sub">{searchedOrder.orderDate || 'Oct 12'}</div>
+                    </div>
 
-                  <div className="stepper-line completed"></div>
+                    <div className="stepper-line completed"></div>
 
-                  <div className="stepper-step completed">
-                    <div className="step-circle"><CheckCircle2 size={16} /></div>
-                    <div className="step-label">Quality Inspected</div>
-                    <div className="step-sub">Serial Verified</div>
+                    <div className="stepper-step completed">
+                      <div className="step-circle"><CheckCircle2 size={16} /></div>
+                      <div className="step-label">Quality Inspected</div>
+                      <div className="step-sub">Serial Verified</div>
+                    </div>
+
+                    <div className="stepper-line completed"></div>
+
+                    <div className="stepper-step active">
+                      <div className="step-circle"><Truck size={16} /></div>
+                      <div className="step-label">In Transit</div>
+                      <div className="step-sub">{searchedOrder.carrier || 'BlueDart Air'}</div>
+                    </div>
+
+                    <div className="stepper-line"></div>
+
+                    <div className="stepper-step">
+                      <div className="step-circle"><Package size={16} /></div>
+                      <div className="step-label">Out for Delivery</div>
+                      <div className="step-sub">Expected Soon</div>
+                    </div>
                   </div>
-
-                  <div className="stepper-line completed"></div>
-
-                  <div className="stepper-step active">
-                    <div className="step-circle"><Truck size={16} /></div>
-                    <div className="step-label">In Transit</div>
-                    <div className="step-sub">{searchedOrder.carrier || 'BlueDart Air'}</div>
-                  </div>
-
-                  <div className="stepper-line"></div>
-
-                  <div className="stepper-step">
-                    <div className="step-circle"><Package size={16} /></div>
-                    <div className="step-label">Out for Delivery</div>
-                    <div className="step-sub">Expected Soon</div>
-                  </div>
-                </div>
+                )}
 
                 {/* Carrier & Delivery Info */}
                 <div className="track-meta-grid">
@@ -368,6 +412,35 @@ export default function HelpModal({ isOpen, onClose, initialTab = 'track', order
                     </span>
                   </div>
                 </div>
+
+                {/* Action button in Tracking tab */}
+                {!(searchedOrder.orderStatus || '').toLowerCase().includes('cancelled') && (
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '16px', paddingTop: '14px', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+                    <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Changed your mind about this order?</span>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        onClose();
+                        if (onOpenOrders) onOpenOrders();
+                      }}
+                      style={{
+                        background: 'rgba(239, 68, 68, 0.1)',
+                        border: '1px solid rgba(239, 68, 68, 0.35)',
+                        color: '#f87171',
+                        borderRadius: '8px',
+                        padding: '6px 14px',
+                        fontSize: '0.8rem',
+                        fontWeight: '700',
+                        cursor: 'pointer',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px'
+                      }}
+                    >
+                      <Ban size={14} /> Cancel Order in My Orders
+                    </button>
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -378,6 +451,13 @@ export default function HelpModal({ isOpen, onClose, initialTab = 'track', order
           <div className="help-tab-body chat-mode-body">
             {/* Quick Prompt Chips */}
             <div className="chat-prompt-chips">
+              <button
+                type="button"
+                className="chip-btn"
+                onClick={() => handleSendChat('How do I cancel my order?')}
+              >
+                ❌ Cancel an order
+              </button>
               <button
                 type="button"
                 className="chip-btn"

@@ -33,9 +33,11 @@ const orderSchema = new mongoose.Schema({
   paymentStatus: { type: String, default: 'Completed' },
   orderStatus: {
     type: String,
-    enum: ['Order Confirmed', 'Shipped', 'Out for Delivery', 'Delivered'],
+    enum: ['Order Confirmed', 'Processing', 'In Transit', 'Shipped', 'Out for Delivery', 'Delivered', 'Cancelled'],
     default: 'Order Confirmed'
   },
+  cancellationReason: { type: String },
+  cancelledAt: { type: Date },
   estimatedDelivery: { type: String },
   orderDate: { type: Date, default: Date.now }
 }, { timestamps: true });

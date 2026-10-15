@@ -7,6 +7,41 @@
   ],
   "orders": [
     {
+      "orderId": "LXC-892401",
+      "items": [
+        {
+          "productId": "shoe-01",
+          "name": "Nike Air Zoom Pegasus 40",
+          "brand": "Nike",
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&auto=format&fit=crop&q=80",
+          "price": 7999,
+          "size": "UK 9",
+          "color": "Crimson Red",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 7999,
+      "discountAmount": 1500,
+      "deliveryCharge": 0,
+      "address": {
+        "name": "Alex Mercer",
+        "doorNo: ": "Villa 7",
+        "houseNo": "Villa 7",
+        "street": "Palm Meadows, Whitefield",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pinCode": "560066",
+        "mobile": "+91 98450 12345"
+      },
+      "paymentMethod": "UPI (Google Pay)",
+      "paymentStatus": "Completed",
+      "orderStatus": "Processing",
+      "carrier": "BlueDart Apex Express",
+      "awbNumber": "BD-982341094-IN",
+      "estimatedDelivery": "Tomorrow by 4:00 PM",
+      "orderDate": "2026-10-15T02:30:00.000Z"
+    },
+    {
       "orderId": "LXC-572116",
       "items": [
         {
@@ -35,9 +70,11 @@
       },
       "paymentMethod": "PhonePe UPI",
       "paymentStatus": "Completed",
-      "orderStatus": "Order Confirmed",
+      "orderStatus": "Cancelled",
       "estimatedDelivery": "Delivery by Sat, Oct 3",
-      "orderDate": "2026-09-30T15:14:09.765Z"
+      "orderDate": "2026-09-30T15:14:09.765Z",
+      "cancellationReason": "Found lower price",
+      "cancelledAt": "2026-10-14T18:05:43.723Z"
     },
     {
       "orderId": "LXC-92841",

@@ -466,6 +466,55 @@ app.post('/api/orders', async (req, res) => {
   }
 });
 
+app.post('/api/orders/:orderId/cancel', async (req, res) => {
+  try {
+    const { orderId } = req.params;
+    const { reason, cancelledAt = new Date().toISOString() } = req.body;
+
+    let updatedOrder = null;
+
+    if (getMongoStatus()) {
+      try {
+        updatedOrder = await Order.findOneAndUpdate(
+          { orderId },
+          {
+            $set: {
+              orderStatus: 'Cancelled',
+              cancellationReason: reason || 'Customer requested cancellation',
+              cancelledAt
+            }
+          },
+          { new: true }
+        );
+      } catch (e) {
+        console.warn('MongoDB cancel failed, falling back:', e.message);
+      }
+    }
+
+    // Update fallbackDB
+    const fallbackIdx = fallbackDB.orders.findIndex(o => o.orderId === orderId);
+    if (fallbackIdx !== -1) {
+      fallbackDB.orders[fallbackIdx].orderStatus = 'Cancelled';
+      fallbackDB.orders[fallbackIdx].cancellationReason = reason || 'Customer requested cancellation';
+      fallbackDB.orders[fallbackIdx].cancelledAt = cancelledAt;
+      updatedOrder = fallbackDB.orders[fallbackIdx];
+      saveFallbackDB();
+    }
+
+    if (!updatedOrder) {
+      return res.status(404).json({ success: false, message: `Order #${orderId} not found` });
+    }
+
+    res.json({
+      success: true,
+      message: `Order #${orderId} has been successfully cancelled. Full 100% refund initiated.`,
+      order: updatedOrder
+    });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 // 7. Wishlist Endpoints
 app.get('/api/wishlist', (req, res) => {
   const items = fallbackDB.wishlist.map(id => localProducts.find(p => p.id === id)).filter(Boolean);
